@@ -1,0 +1,137 @@
+[
+  {
+    "model": "authors.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Александр",
+      "last_name": "Пушкин",
+      "birthday_year": 1799
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Лев",
+      "last_name": "Толстой",
+      "birthday_year": 1828
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Сергей",
+      "last_name": "Есенин",
+      "birthday_year": 1895
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "Фёдор",
+      "last_name": "Достоевский",
+      "birthday_year": 1821
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 5,
+    "fields": {
+      "first_name": "Николай",
+      "last_name": "Гоголь",
+      "birthday_year": 1809
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 6,
+    "fields": {
+      "first_name": "Иван",
+      "last_name": "Тургенев",
+      "birthday_year": 1818
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 7,
+    "fields": {
+      "first_name": "Антон",
+      "last_name": "Чехов",
+      "birthday_year": 1860
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 8,
+    "fields": {
+      "first_name": "Джоан",
+      "last_name": "Роулинг",
+      "birthday_year": 1965
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 9,
+    "fields": {
+      "first_name": "Джон",
+      "last_name": "Толкин",
+      "birthday_year": 1892
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 10,
+    "fields": {
+      "first_name": "Жюль",
+      "last_name": "Верн",
+      "birthday_year": 1828
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 11,
+    "fields": {
+      "first_name": "Эрнест",
+      "last_name": "Хемингуэй",
+      "birthday_year": 1899
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 12,
+    "fields": {
+      "first_name": "Агата",
+      "last_name": "Кристи",
+      "birthday_year": 1890
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 13,
+    "fields": {
+      "first_name": "Марк",
+      "last_name": "Твен",
+      "birthday_year": 1835
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 14,
+    "fields": {
+      "first_name": "Уильям",
+      "last_name": "Шекспир",
+      "birthday_year": 1564
+    }
+  },
+  {
+    "model": "authors.author",
+    "pk": 15,
+    "fields": {
+      "first_name": "Иван",
+      "last_name": "Гончаров",
+      "birthday_year": 1812
+    }
+  }
+]
