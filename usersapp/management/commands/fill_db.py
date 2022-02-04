@@ -41,6 +41,3 @@ class Command(BaseCommand):
                 username=username, email=email,
                 first_name=f_name, last_name=l_name, password=password
             )
-
-
-
