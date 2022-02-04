@@ -5,5 +5,5 @@ from usersapp.serializers import UserModelSerializer
 
 
 class UserModelViewSet(ModelViewSet):
-    queryset = User.objects.all()
+    queryset = User.objects.all().order_by('username')
     serializer_class = UserModelSerializer
