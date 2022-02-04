@@ -2,7 +2,6 @@ import json
 from django.core.management.base import BaseCommand
 from faker import Faker
 
-from authors.models import Author
 from usersapp.models import User
 
 
@@ -15,15 +14,6 @@ def load_from_json(file_name):
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        authors = load_from_json('authors/fixtures/authors.json')
-
-        Author.objects.all().delete()
-        for author in authors:
-            author_element = author.get('fields')
-            author_element['id'] = author.get('pk')
-            new_author = Author(**author_element)
-            new_author.save()
-
         # users = load_from_json('usersapp/fixtures/users.json')
 
         User.objects.all().delete()
