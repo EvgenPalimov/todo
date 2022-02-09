@@ -1,36 +1,32 @@
-import json
 from django.core.management.base import BaseCommand
 from faker import Faker
 
 from usersapp.models import User
 
-
-TEST_USER_QUANTITY = 4
 FAKE = Faker()
 
-def load_from_json(file_name):
-    with open(file_name, mode='r', encoding='utf-8') as infile:
-        return json.load(infile)
-
 class Command(BaseCommand):
-    def handle(self, *args, **options):
-        # users = load_from_json('usersapp/fixtures/users.json')
+    help = 'Create Superuser and some test users'
 
+    def add_arguments(self, parser):
+        parser.add_argument('count', type=int)
+
+    def handle(self, *args, **options):
+
+        # Delete all users
         User.objects.all().delete()
+
+        # Create superuser
         User.objects.create_superuser(
             username='uegene', first_name='Uegene',last_name='Pavlovich',
             email='uegene@mail.ru', password='1')
-        # for user in users:
-        #     user_element = user.get('fields')
-        #     user_element['id'] = user.get('pk')
-        #     new_user = User.objects.create_user(**user_element)
-        #     new_user.save()
+        user_count = options['count']
 
         # Create user data
-        first_name = [FAKE.unique.first_name() for _ in range(TEST_USER_QUANTITY)]
-        last_name = [FAKE.unique.last_name() for _ in range(TEST_USER_QUANTITY)]
-        emails = [FAKE.unique.last_name() for _ in range(TEST_USER_QUANTITY)]
-        passwords = [FAKE.unique.first_name() for _ in range(TEST_USER_QUANTITY)]
+        first_name = [FAKE.unique.first_name() for _ in range(user_count)]
+        last_name = [FAKE.unique.last_name() for _ in range(user_count)]
+        emails = [FAKE.unique.last_name() for _ in range(user_count)]
+        passwords = [FAKE.unique.first_name() for _ in range(user_count)]
 
         #Create test users
 
@@ -41,3 +37,5 @@ class Command(BaseCommand):
                 username=username, email=email,
                 first_name=f_name, last_name=l_name, password=password
             )
+
+        print('Superuser and test user - create.')
