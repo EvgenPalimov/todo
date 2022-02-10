@@ -2,7 +2,7 @@ import React from "react";
 
 const logo = require('./image/header-logo.png');
 
-const HeaderList = ({header}) => {
+export default function Header() {
     return (
         <header className="page-header padding-site">
             <div className="page-header__logo">
@@ -35,5 +35,3 @@ const HeaderList = ({header}) => {
         </header>
     )
 }
-
-export default HeaderList

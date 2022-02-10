@@ -1,10 +1,13 @@
 import React, {Component} from "react";
 import axios from "axios";
 import './css/App.css';
-import './css/style.css';
+import './css/Style.css';
 import UserList from "./components/User.js";
-import HeaderList from "./components/menu";
-import FooterList from "./components/footer";
+import Header from "./components/Menu.js";
+import Footer from './components/Footer.js';
+
+const DOMAIN = 'http://127.0.0.1:8000/api/'
+const get_url = (url) => `${DOMAIN}${url}`
 
 class App extends React.Component {
     constructor(props) {
@@ -15,7 +18,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://127.0.0.1:8000/api/users/').then(response => {
+        axios.get(get_url('users/')).then(response => {
             const users = response.data
             this.setState({
                 'users': users
@@ -27,11 +30,11 @@ class App extends React.Component {
         return (
             <div className="page">
                 <div className="content">
-                    <HeaderList/>
+                    <Header/>
                     <UserList users={this.state.users}/>
                 </div>
                 <div className="footer">
-                    <FooterList/>
+                    <Footer/>
                 </div>
             </div>
         );
