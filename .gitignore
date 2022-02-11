@@ -1,0 +1,4 @@
+/package-lock.json
+/db.sqlite3
+/venv/
+/node_modules/
