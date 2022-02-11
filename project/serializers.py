@@ -5,7 +5,7 @@ from usersapp.models import User
 
 
 class ProjectModelSerializer(serializers.ModelSerializer):
-    user = serializers.SlugRelatedField(
+    users = serializers.SlugRelatedField(
         many=True,
         slug_field='username',
         queryset = User.objects
@@ -16,7 +16,7 @@ class ProjectModelSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ToDoModelSerializer(serializers.ModelSerializer):
-    users = serializers.SlugRelatedField(
+    user = serializers.SlugRelatedField(
         slug_field='username',
         queryset=User.objects
      )
