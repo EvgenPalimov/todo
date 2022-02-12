@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterList = ({footer}) => {
+export default function Footer() {
     return (
         <footer className="page-footer">
             <p className="page-footer__copy-txt">&copy; 2021 Brand All Rights Reserved.</p>
@@ -34,4 +34,3 @@ const FooterList = ({footer}) => {
     )
 }
 
-export default FooterList
