@@ -11,12 +11,7 @@ class ProjectFilter(filters.FilterSet):
         fields = ['name']
 
 
-class CharFilterInFilter(filters.BaseInFilter, filters.CharFilter):
-    pass
-
-
 class ToDoFilter(filters.FilterSet):
-    project = CharFilterInFilter(field_name='project__name', lookup_expr='in')
     created = filters.RangeFilter()
 
     class Meta:

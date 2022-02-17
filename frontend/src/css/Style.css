@@ -27,6 +27,10 @@
   color: aqua;
 }
 
+.page-header__logo > a {
+  padding-top: 7px;
+}
+
 .page-header__icons-wrp {
   display: flex;
   align-items: center;
