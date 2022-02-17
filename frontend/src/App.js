@@ -3,8 +3,6 @@ import axios from "axios";
 import './css/App.css';
 import './css/Style.css';
 import UserList from "./components/User.js";
-import Header from "./components/Menu.js";
-import Footer from './components/Footer.js';
 import ProjectList from "./components/Projects";
 import ToDoList from "./components/ToDo";
 
@@ -43,16 +41,10 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="page">
-                <div className="content">
-                    <Header/>
-                    <UserList users={this.state.users}/>
-                    <ProjectList projects={this.state.projects}/>
-                    <ToDoList todo={this.state.todo}/>
-                </div>
-                <div className="footer">
-                    <Footer/>
-                </div>
+            <div>
+                <UserList users={this.state.users}/>
+                <ProjectList projects={this.state.projects}/>
+                <ToDoList todo={this.state.todo}/>
             </div>
         );
     }

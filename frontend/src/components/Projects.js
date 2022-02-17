@@ -4,16 +4,13 @@ const ProjectItem = ({project}) => {
     return (
         <tr>
             <td>
-                {project.username}
+                {project.name}
             </td>
             <td>
-                {project.first_name}
+                {project.repository}
             </td>
             <td>
-                {project.last_name}
-            </td>
-            <td>
-                {project.email}
+                {project.users}
             </td>
         </tr>
     )
@@ -24,17 +21,15 @@ const ProjectList = ({projects}) => {
         <table className = 'bordered'>
             <caption>Table with users</caption>
             <th>
-                User name
+                Project name
             </th>
             <th>
-                First name
+                Repository
             </th>
             <th>
-                Last name
+                Users
             </th>
-            <th>
-                E-mail
-            </th>
+
             {projects.map((project) => <ProjectItem project={project} />)}
         </table>
     )
