@@ -7,7 +7,7 @@
   padding: 18px 0
   box-sizing: border-box
   background: #222222
-  margin-bottom: 40px
+  margin: 0 0 40px 0
   flex: 0 0 auto
 
 .page-header__logo
@@ -22,10 +22,28 @@
   display: block
   margin-left: 10px
 
-.page-header__logo-txt:hover
+.page-header__logo-txt:hover,
+.page-header__menu a:hover
   color: aqua
+
+.page-header__logo-txt:hover,
+.page-header__menu a:hover
+  fill: lightblue
+
 .page-header__logo > a
   padding-top: 7px
+
+.page-header__menu
+  display: flex
+  align-items: center
+
+.page-header__menu > a
+  color: #FFFFFF
+  font-size: 35px
+  line-height: 38px
+  font-weight: 600
+  text-decoration: none
+  margin: 0 25px
 
 .page-header__icons-wrp
   display: flex
@@ -95,6 +113,41 @@
 
 .icon-instagram:hover svg
   fill: #FFFFFF
+
+.page-notFound
+  display: flex
+  justify-content: center
+
+.page-notFound > h2
+  font-size: 35px
+  line-height: 38px
+  font-weight: 600
+
+.page-notFound span
+  color: red
+
+.active
+  color: #679dd7 !important
+
+.project-details
+  font-size: 20px
+  font-weight: 400
+  line-height: 24px
+
+.project-details span
+  display: block
+  margin: 20px 0
+  font-weight: bold
+
+.project-details__name
+  display: block
+  margin: 50px 0
+
+.project-details__repository
+  margin-left: 15px
+
+.project-details__list-user li
+  text-transform: capitalize
 
 
 

@@ -29,4 +29,4 @@ class ToDoModelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ToDo
-        exclude = ('is_active',)
+        exclude = ('active',)

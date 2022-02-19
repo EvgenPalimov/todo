@@ -19,24 +19,24 @@ class ToDoPageNumberPagination(PageNumberPagination):
 class ProjectModelViewSet(ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectModelSerializer
-    pagination_class = ProjectPageNumberPagination
+    # pagination_class = ProjectPageNumberPagination
     filter_class = ProjectFilter
 
 
 class ToDoModelViewSet(ModelViewSet):
     queryset = ToDo.objects.all()
     serializer_class = ToDoModelSerializer
-    pagination_class = ToDoPageNumberPagination
+    # pagination_class = ToDoPageNumberPagination
     filter_class = ToDoFilter
 
     def destroy(self, request, *args, **kwargs):
         try:
             object = ToDo.objects.get(pk=kwargs['pk'])
-            if object.is_active:
-                object.is_active = False
+            if object.active:
+                object.active = False
                 object.save()
             else:
-                object.is_active = True
+                object.active = True
                 object.save()
         except:
             return Response(status=status.HTTP_404_NOT_FOUND)

@@ -25,22 +25,24 @@ const ToDoItem = ({toDoElement}) => {
 const ToDoList = ({todo}) => {
     return (
         <table className='bordered'>
-            <caption>Table with ToD</caption>
-            <th>
-                Project name
-            </th>
-            <th>
-                About project
-            </th>
-            <th>
-                User
-            </th>
-            <th>
-                Created
-            </th>
-            <th>
-                Updated
-            </th>
+            <caption>Table with ToDo</caption>
+            <tr>
+                <th>
+                    Project name
+                </th>
+                <th>
+                    About project
+                </th>
+                <th>
+                    User
+                </th>
+                <th>
+                    Created
+                </th>
+                <th>
+                    Updated
+                </th>
+            </tr>
             {todo.map((toDoElement) => <ToDoItem toDoElement={toDoElement}/>)}
         </table>
     )
