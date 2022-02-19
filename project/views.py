@@ -1,5 +1,5 @@
 from rest_framework import status
-from rest_framework.pagination import LimitOffsetPagination
+from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
@@ -8,34 +8,37 @@ from project.models import Project, ToDo
 from project.serializers import ProjectModelSerializer, ToDoModelSerializer
 
 
-class ProjectLimitOffsetPagination(LimitOffsetPagination):
+class ProjectPageNumberPagination(PageNumberPagination):
     default_limit = 10
 
 
-class ToDoLimitOffsetPagination(LimitOffsetPagination):
+class ToDoPageNumberPagination(PageNumberPagination):
     default_limit = 20
 
 
 class ProjectModelViewSet(ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectModelSerializer
-    pagination_class = ProjectLimitOffsetPagination
+    # pagination_class = ProjectPageNumberPagination
     filter_class = ProjectFilter
 
 
 class ToDoModelViewSet(ModelViewSet):
     queryset = ToDo.objects.all()
     serializer_class = ToDoModelSerializer
-    pagination_class = ToDoLimitOffsetPagination
+    # pagination_class = ToDoPageNumberPagination
     filter_class = ToDoFilter
 
     def destroy(self, request, *args, **kwargs):
-        object = ToDo.objects.get(pk=kwargs['pk'])
-        if object.is_active:
-            object.is_active = False
-            object.save()
+        try:
+            object = ToDo.objects.get(pk=kwargs['pk'])
+            if object.active:
+                object.active = False
+                object.save()
+            else:
+                object.active = True
+                object.save()
+        except:
+            return Response(status=status.HTTP_404_NOT_FOUND)
         else:
-            object.is_active = True
-            object.save()
-
-        return Response(status=status.HTTP_204_NO_CONTENT)
+            return Response(status=status.HTTP_204_NO_CONTENT)
