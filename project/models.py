@@ -5,8 +5,8 @@ from usersapp.models import User
 
 
 class Project(models.Model):
-    name = models.CharField(verbose_name='Название проекта', max_length=100)
-    url_repo = models.URLField(verbose_name='Ссылка на репозиторий', blank=True, null=True)
+    name = models.CharField(verbose_name='Название проекта', max_length=100, unique=True)
+    repository = models.URLField(verbose_name='Ссылка на репозиторий', blank=True, null=True)
     users = models.ManyToManyField(User, verbose_name='Пользователи')
 
     class Meta:

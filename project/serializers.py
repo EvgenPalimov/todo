@@ -8,18 +8,19 @@ class ProjectModelSerializer(serializers.ModelSerializer):
     users = serializers.SlugRelatedField(
         many=True,
         slug_field='username',
-        queryset = User.objects
-     )
+        queryset=User.objects
+    )
 
     class Meta:
         model = Project
         fields = '__all__'
 
+
 class ToDoModelSerializer(serializers.ModelSerializer):
     user = serializers.SlugRelatedField(
         slug_field='username',
         queryset=User.objects
-     )
+    )
 
     project = serializers.SlugRelatedField(
         slug_field='name',
@@ -28,4 +29,4 @@ class ToDoModelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ToDo
-        fields = '__all__'
+        exclude = ('is_active',)
