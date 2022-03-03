@@ -14,9 +14,6 @@ import ProjectDetailsList from "./components/ProjectDetails";
 import Cookies from "universal-cookie";
 
 
-const DOMAIN = 'http://127.0.0.1:8000/api/'
-const get_url = (url) => `${DOMAIN}${url}`
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -30,16 +27,13 @@ class App extends React.Component {
             'projects': [],
             'todo': [],
             'token': '',
+            'username': '',
         };
-    }
-
-    logout() {
-        this.setToken('')
     }
 
     loadData() {
         const headers = this.getHeaders()
-        axios.get(get_url('users/', {headers})).then(response => {
+        axios.get('http://127.0.0.1:8000/api/users/', {headers}).then(response => {
             this.setState({
                 'users': response.data
             })
@@ -48,7 +42,7 @@ class App extends React.Component {
             this.setState({'users': []})
         });
 
-        axios.get(get_url('projects/', {headers})).then(response => {
+        axios.get('http://127.0.0.1:8000/api/projects/', {headers}).then(response => {
             this.setState({
                 'projects': response.data
             })
@@ -57,18 +51,18 @@ class App extends React.Component {
             this.setState({'projects': []})
         });
 
-        axios.get(get_url('todo/', {headers})).then(response => {
+        axios.get('http://127.0.0.1:8000/api/todo/', {headers}).then(response => {
             this.setState({
                 'todo': response.data
             })
-            }).catch(error => {
+        }).catch(error => {
             console.log(error)
             this.setState({'todo': []})
         });
     }
 
     isAuth() {
-        return !!this.state.token
+        return this.state.token !== ''
     }
 
     setToken(token) {
@@ -84,19 +78,33 @@ class App extends React.Component {
     }
 
     getToken(username, password) {
-        axios.post(get_url('api-token-auth/', {username: username, password: password})).then(response => {
+        axios.post('http://127.0.0.1:8000/api-token-auth/',
+            {username: username, password: password}).then(response => {
             this.setToken(response.data['token'])
-        }).catch(error => console.log(error));
+            this.setState({'username': username},)
+        }).catch((error) => {
+            if (error.response.status === 401) {
+                alert('Неверный логин или пароль')
+            } else {
+                console.log(error)
+            }
+        });
     }
 
     getHeaders() {
         let headers = {
             'Content-Type': 'application/json'
         }
-        if(this.isAuth()) {
+        console.log(this.isAuth())
+        if (this.isAuth()) {
             headers['Authorization'] = `Token ${this.state.token}`
         }
         return headers
+    }
+
+    logout() {
+        this.setToken('')
+        this.setState({'username': ''})
     }
 
     componentDidMount() {
@@ -108,7 +116,8 @@ class App extends React.Component {
             <BrowserRouter>
                 <div className="page">
                     <div className="content">
-                        <Menu menuItems={this.state.menuItems} auth={this.isAuth} logout={this.logout}/>
+                        <Menu menuItems={this.state.menuItems} auth={this.isAuth()} logout={() => this.logout()}
+                              username={this.state.username}/>
                         <Switch>
                             <Route exact path='/users' component={() => <UserList users={this.state.users}/>}/>
                             <Route exact path='/projects'
@@ -117,7 +126,6 @@ class App extends React.Component {
                             <Route exact path='/todo' component={() => <ToDoList todo={this.state.todo}/>}/>
                             <Route exact path='/login' component={() => <LoginForm
                                 getToken={(username, password) => this.getToken(username, password)}/>}/>
-                            <Route exact path='/logout' component={() => this.logout} />
                             <Redirect from={'/'} to={'/users'}/>
                             <Route component={NotFound404}/>
                         </Switch>

@@ -1,4 +1,5 @@
 import React from "react";
+import {Redirect} from "react-router-dom";
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <form className='page-auth__form' onSubmit={(event) => this.handleChange(event)}>
+            <form className='page-auth__form' onSubmit={(event) => this.handleSubmit(event)}>
                 <fieldset className='page-auth__form-field'>
                     <legend className="page-auth__form-title">Form authentification</legend>
                     <input className="page-auth__form-input" type="text" name="login" placeholder="Login"
