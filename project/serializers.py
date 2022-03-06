@@ -5,11 +5,11 @@ from usersapp.models import User
 
 
 class ProjectModelSerializer(serializers.ModelSerializer):
-    users = serializers.SlugRelatedField(
-        many=True,
-        slug_field='username',
-        queryset=User.objects
-    )
+    # users = serializers.SlugRelatedField(
+    #     many=True,
+    #     slug_field='username',
+    #     queryset=User.objects
+    # )
 
     class Meta:
         model = Project
@@ -17,15 +17,15 @@ class ProjectModelSerializer(serializers.ModelSerializer):
 
 
 class ToDoModelSerializer(serializers.ModelSerializer):
-    user = serializers.SlugRelatedField(
-        slug_field='username',
-        queryset=User.objects
-    )
-
-    project = serializers.SlugRelatedField(
-        slug_field='name',
-        queryset=Project.objects
-    )
+    # user = serializers.SlugRelatedField(
+    #     slug_field='username',
+    #     queryset=User.objects
+    # )
+    #
+    # project = serializers.SlugRelatedField(
+    #     slug_field='name',
+    #     queryset=Project.objects
+    # )
 
     class Meta:
         model = ToDo
