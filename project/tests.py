@@ -21,7 +21,7 @@ class TestProjectViewSet(TestCase):
         self.factory = APIRequestFactory()
 
         self.data_project = {'name': 'Test_1', 'description': 'Test_description', 'repository': 'https://github.com/1/',
-                             'users': '1'}
+                             'users': "test"}
         self.data_project_mixer = mixer.blend(Project)
         self.data_todo = {'project': 1, 'text': 'Test', 'user': 'user__id'}
         self.data_project_put = {'name': 'Test_2', 'description': 'Test_description',
@@ -70,7 +70,7 @@ class TestProjectViewSet(TestCase):
     #     response = view(request)
     #     self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-    #APIClient
+    APIClient
     def test_get_project_detail(self):
         client = APIClient()
         project = mixer.blend(Project)
