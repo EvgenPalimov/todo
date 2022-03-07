@@ -70,11 +70,11 @@ class TestProjectViewSet(TestCase):
     #     response = view(request)
     #     self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-    APIClient
+    # APIClient
     def test_get_project_detail(self):
         client = APIClient()
         project = mixer.blend(Project)
-        response = client.get(f'project/{project.id}/')
+        response = client.get(f'api/projects/{project.id}')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def tearDown(self) -> None:

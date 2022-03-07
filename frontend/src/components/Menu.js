@@ -9,7 +9,7 @@ function MenuItem({name, href}) {
     )
 }
 
-export default function Menu({menuItems, auth, logout, username}) {
+export default function Menu({menuItems, auth, logout}) {
     return (
         <nav>
             <ul className="page-header padding-site">
@@ -23,9 +23,9 @@ export default function Menu({menuItems, auth, logout, username}) {
                           {menuItems.map((item) => <MenuItem name={item.name} href={item.href}/>)}
                 </li>
 
-                {auth ?
+                {auth.isLogin ?
                     <li className="page-header__icons-wrp">
-                        <span className="page-header__icons-username">User - {username}.</span>
+                        <span className="page-header__icons-username">User - {auth.username}.</span>
                          <a href="/" className="page-header__icons">
                             <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
                                 <path
