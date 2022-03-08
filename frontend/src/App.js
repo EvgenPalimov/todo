@@ -45,6 +45,7 @@ class App extends React.Component {
                 cookies.set('refresh', response.data.refresh)
                 this.setState({'auth': {username: username, isLogin: true}})
                 this.loadData()
+                window.location.href = '/'
             }).catch(error => {
             if (error.response.status === 401) {
                 alert('Неверный логин или пароль')
@@ -59,6 +60,7 @@ class App extends React.Component {
         cookies.set('access', '')
         cookies.set('refresh', '')
         this.setState({'auth': {username: '', isLogin: false}})
+        window.location.href = '/login'
     }
 
     loadData() {

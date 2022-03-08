@@ -6,7 +6,8 @@ from rest_framework.viewsets import ModelViewSet
 
 from project.filters import ProjectFilter, ToDoFilter
 from project.models import Project, ToDo
-from project.serializers import ProjectModelSerializer, ToDoModelSerializer
+from project.serializers import ProjectModelSerializer, ToDoModelSerializer, ProjectBaseModelSerializer, \
+    ToDoBaseModelSerializer
 
 
 class ProjectPageNumberPagination(PageNumberPagination):
@@ -19,17 +20,27 @@ class ToDoPageNumberPagination(PageNumberPagination):
 
 class ProjectModelViewSet(ModelViewSet):
     queryset = Project.objects.all()
-    serializer_class = ProjectModelSerializer
+    serializer_class = ProjectBaseModelSerializer
     # pagination_class = ProjectPageNumberPagination
     filter_class = ProjectFilter
+
+    def get_serializer_class(self):
+        if self.request.method in ['GET']:
+            return ProjectModelSerializer
+        return ProjectBaseModelSerializer
 
 
 class ToDoModelViewSet(ModelViewSet):
 
     queryset = ToDo.objects.all()
-    serializer_class = ToDoModelSerializer
+    serializer_class = ToDoBaseModelSerializer
     # pagination_class = ToDoPageNumberPagination
     filter_class = ToDoFilter
+
+    def get_serializer_class(self):
+        if self.request.method in ['GET']:
+            return ToDoModelSerializer
+        return ToDoBaseModelSerializer
 
     def destroy(self, request, *args, **kwargs):
         try:
