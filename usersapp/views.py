@@ -8,7 +8,6 @@ from usersapp.serializers import UserModelSerializer
 
 
 class UserViewSet(ViewSet):
-    renderer_classes = [JSONRenderer, BrowsableAPIRenderer]
     queryset = User.objects.all()
     serializer_class = UserModelSerializer
 

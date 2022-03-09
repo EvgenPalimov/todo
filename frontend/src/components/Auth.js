@@ -15,7 +15,7 @@ class LoginForm extends React.Component {
     }
 
     handleSubmit(event) {
-        this.props.getToken(this.state.login, this.state.password)
+        this.props.login(this.state.login, this.state.password)
         event.preventDefault()
     }
 

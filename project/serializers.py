@@ -4,6 +4,13 @@ from project.models import Project, ToDo
 from usersapp.models import User
 
 
+class ProjectBaseModelSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Project
+        fields = '__all__'
+
+
 class ProjectModelSerializer(serializers.ModelSerializer):
     users = serializers.SlugRelatedField(
         many=True,
@@ -14,6 +21,12 @@ class ProjectModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
         fields = '__all__'
+
+
+class ToDoBaseModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ToDo
+        exclude = ('active',)
 
 
 class ToDoModelSerializer(serializers.ModelSerializer):
