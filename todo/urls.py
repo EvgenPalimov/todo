@@ -49,5 +49,6 @@ urlpatterns = [
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('swagger/', schema_view.with_ui('swagger')),
+    path('redoc/',schema_view.with_ui('redoc')),
     # path('swagger<str:format>', schema_view.without_ui()),
 ]

@@ -31,7 +31,6 @@ class ProjectModelViewSet(ModelViewSet):
 
 
 class ToDoModelViewSet(ModelViewSet):
-
     queryset = ToDo.objects.all()
     # pagination_class = ToDoPageNumberPagination
     filter_class = ToDoFilter
