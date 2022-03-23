@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_simplejwt.token_blacklist',
     'drf_yasg',
+    'graphene_django',
     # my
     'usersapp',
     'project',
@@ -172,4 +173,8 @@ REST_FRAMEWORK = {
     'DEFAULT_VERSIONING_CLASS':'rest_framework.versioning.QueryParameterVersioning',
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     # 'PAGE_SIZE': 10
+}
+
+GRAPHENE = {
+    'SCHEMA': 'project.schema.schema',
 }

@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from drf_yasg import openapi
+from graphene_django.views import GraphQLView
 from rest_framework import permissions
 from rest_framework.authtoken.views import obtain_auth_token
 from drf_yasg.views import get_schema_view
@@ -50,5 +51,6 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('swagger/', schema_view.with_ui('swagger')),
     path('redoc/',schema_view.with_ui('redoc')),
-    # path('swagger<str:format>', schema_view.without_ui()),
+
+    path('graphql/', GraphQLView.as_view(graphiql=True))
 ]
