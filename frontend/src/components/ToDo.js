@@ -1,6 +1,7 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
-const ToDoItem = ({toDoElement}) => {
+const ToDoItem = ({toDoElement, deleteToDo}) => {
     return (
         <tr>
             <td>
@@ -18,34 +19,46 @@ const ToDoItem = ({toDoElement}) => {
             <td>
                 {toDoElement.updated}
             </td>
+            <td>
+                <button className='app-button' type='button' onClick={() => deleteToDo(toDoElement.id)}>Delete</button>
+            </td>
         </tr>
     )
 }
 
-const ToDoList = ({todo}) => {
+const ToDoList = ({todo, deleteToDo}) => {
     return (
-        <table className='bordered'>
-            <caption>Table with ToDo</caption>
-            <tr>
-                <th>
-                    Project name
-                </th>
-                <th>
-                    About project
-                </th>
-                <th>
-                    User
-                </th>
-                <th>
-                    Created
-                </th>
-                <th>
-                    Updated
-                </th>
-            </tr>
-            {todo.map((toDoElement) => <ToDoItem toDoElement={toDoElement}/>)}
-        </table>
-    )
+        <div>
+            <div className='padding-site'>
+                <Link className='app-button ' to='/todo/create'>Create</Link>
+            </div>
+            <table className='bordered'>
+                <caption>Table with ToDo</caption>
+                <tr>
+                    <th>
+                        Project name
+                    </th>
+                    <th>
+                        About project
+                    </th>
+                    <th>
+                        User
+                    </th>
+                    <th>
+                        Created
+                    </th>
+                    <th>
+                        Updated
+                    </th>
+                     <th>
+                        Delete
+                    </th>
+                </tr>
+                {todo.map((toDoElement) => <ToDoItem toDoElement={toDoElement}
+                                                     deleteToDo={deleteToDo}/>)}
+            </table>
+        </div>
+)
 }
 
 export default ToDoList

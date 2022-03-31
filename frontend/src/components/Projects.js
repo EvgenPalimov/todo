@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const ProjectItem = ({project}) => {
+const ProjectItem = ({project, deleteProject}) => {
     return (
         <tr>
             <td>
@@ -18,30 +18,42 @@ const ProjectItem = ({project}) => {
                     {project.users.map((user) => <li>{user}</li>)}
                 </ol>
             </td>
+            <td>
+                <button className='app-button' type='button' onClick={() => deleteProject(project.id)}>Delete</button>
+            </td>
         </tr>
     )
 }
 
-const ProjectList = ({projects}) => {
+const ProjectList = ({projects, deleteProject}) => {
     return (
-        <table className='bordered'>
-            <caption>Table with Projects</caption>
-            <tr>
-                <th>
-                    Project name
-                </th>
-                <th>
-                    Description
-                </th>
-                <th>
-                    Repository
-                </th>
-                <th>
-                    Users
-                </th>
-            </tr>
-            {projects.map((project) => <ProjectItem project={project}/>)}
-        </table>
+        <div>
+            <div className='padding-site'>
+                <Link className='app-button ' to='/project/create'>Create</Link>
+            </div>
+            <table className='bordered'>
+                <caption>Table with Projects</caption>
+                <tr>
+                    <th>
+                        Project name
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Repository
+                    </th>
+                    <th>
+                        Users
+                    </th>
+                    <th>
+                        Delete
+                    </th>
+                </tr>
+                {projects.map((project) => <ProjectItem project={project}
+                                                        deleteProject={deleteProject}/>)}
+            </table>
+        </div>
     )
 }
 

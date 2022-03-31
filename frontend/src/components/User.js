@@ -1,25 +1,29 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
-const UserItem = ({user}) => {
+const UserItem = ({user, deleteUser}) => {
     return (
         <tr>
             <td>
                 {user.username}
             </td>
             <td>
-                {user.first_name}
+                {user.firstName}
             </td>
             <td>
-                {user.last_name}
+                {user.lastName}
             </td>
             <td>
                 {user.email}
+            </td>
+            <td>
+                <button className='app-button' type='button' onClick={() => deleteUser(user.id)}>Delete</button>
             </td>
         </tr>
     )
 }
 
-const UserList = ({users}) => {
+const UserList = ({users, deleteUser}) => {
     return (
         <table className='bordered'>
             <caption>Table with users</caption>
@@ -36,8 +40,12 @@ const UserList = ({users}) => {
                 <th>
                     E-mail
                 </th>
+                <th>
+                    Delete
+                </th>
             </tr>
-            {users.map((user) => <UserItem user={user}/>)}
+            {users.map((user) => <UserItem user={user}
+                                           deleteUser={deleteUser}/>)}
         </table>
     )
 }
