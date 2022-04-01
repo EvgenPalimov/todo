@@ -51,9 +51,6 @@ class App extends React.Component {
         })
     }
 
-    getProjectData(id) {
-        console.log(`asdnia ${id}`)
-    }
     updateProject(id, name, description, repository, user) {
         const headers = this.get_headers()
         const data = {id:id, name: name, description: description, repository: repository, users: user}
