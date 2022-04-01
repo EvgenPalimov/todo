@@ -14,6 +14,7 @@ import NotFound404 from "./components/NotFound404";
 import ProjectDetailsList from "./components/ProjectDetails";
 import Cookies from "universal-cookie";
 import ToDoFormCreate from "./components/ToDoFormCreate";
+import ProjectFormUpdate from "./components/ProjectFormUpdate";
 
 
 const DOMAIN = 'http://127.0.0.1:8000/api/'
@@ -42,7 +43,7 @@ class App extends React.Component {
         const data = {name: name, description: description, repository: repository, users: user}
         axios.post(get_url(`projects/`), data, {headers}).then(
             response => {
-                window.location.href = 'http://localhost:3000/projects';
+                window.location.href = 'http://localhost:3000/projects/';
             }
         ).catch(error => {
             console.log(error)
@@ -50,8 +51,20 @@ class App extends React.Component {
         })
     }
 
-    updateProject(id) {
-
+    getProjectData(id) {
+        console.log(`asdnia ${id}`)
+    }
+    updateProject(id, name, description, repository, user) {
+        const headers = this.get_headers()
+        const data = {name: name, description: description, repository: repository, users: user}
+        axios.put(get_url(`projects/${id}`), data, {headers}).then(
+            response => {
+                window.location.href = `http://localhost:3000/projects/`;
+            }
+        ).catch(error => {
+            console.log(error)
+            this.setState({projects: []})
+        })
     }
 
     deleteProject(id) {
@@ -69,7 +82,7 @@ class App extends React.Component {
         const data = {project: project, text: text, user: user}
         axios.post(get_url(`todo/`), data, {headers}).then(
             response => {
-                window.location.href = 'http://localhost:3000/todo';
+                window.location.href = 'http://localhost:3000/todo/';
             }
         ).catch(error => {
             console.log(error)
@@ -200,6 +213,11 @@ class App extends React.Component {
                             <Route exact path='/projects'
                                    component={() => <ProjectList projects={this.state.projects}
                                                                  deleteProject={(id) => this.deleteProject(id)}/>}/>
+                             <Route exact path='/project/update/:id'
+                                   component={() => <ProjectFormUpdate projects={this.state.projects}
+                                                                       users={this.state.users}
+                                                                       updateProject={(id, name, description, repository, user) =>
+                                                                           this.updateProject(id, name, description, repository, user)}/>}/>
                             <Route path='/project/:id'> <ProjectDetailsList projects={this.state.projects}/> </Route>
                             <Route exact path='/todo/create' component={() => <ToDoFormCreate users={this.state.users}
                                                                                               projects={this.state.projects}

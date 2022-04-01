@@ -1,9 +1,20 @@
 import React from "react";
 
-class ProjectFormCreate extends React.Component {
+class ProjectFormUpdate extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {name: '', description: '', repository: '', user: []}
+        this.state = {id: 0, name: '', description: '', repository: '', user: []}
+        this.getProjectData(this.props.id)
+    }
+
+    getProjectData(id) {
+        let projectData = this.props.projects.filter(item => item.id === id)
+        this.setState({
+            'name': projectData.name,
+            'description': projectData.description,
+            'repository': projectData.repository,
+            'user': projectData.users
+        })
     }
 
     handleProjectChange(event) {
@@ -31,7 +42,7 @@ class ProjectFormCreate extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        this.props.createProject(this.state.name, this.state.description, this.state.repository, this.state.user)
+        this.props.updateProject(this.state.name, this.state.description, this.state.repository, this.state.user)
     }
 
     render() {
@@ -48,7 +59,7 @@ class ProjectFormCreate extends React.Component {
                         </div>
                         <div className="create-form-div">
                             <label className="create-form-label" htmlFor="description">Description:</label>
-                            <textarea className="create-form-input" type="text" id="description" name="description"
+                            <textarea className="create-form-input" id="description" name="description"
                                    placeholder="Description"
                                    value={this.state.description} onChange={(event) => this.handleChange(event)}/>
                         </div>
@@ -73,4 +84,4 @@ class ProjectFormCreate extends React.Component {
     }
 }
 
-export default ProjectFormCreate
+export default ProjectFormUpdate

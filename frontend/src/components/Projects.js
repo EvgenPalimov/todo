@@ -19,6 +19,9 @@ const ProjectItem = ({project, deleteProject}) => {
                 </ol>
             </td>
             <td>
+                <Link className='button-link' to={`/project/update/${project.id}`}>Update</Link>
+            </td>
+            <td>
                 <button className='app-button' type='button' onClick={() => deleteProject(project.id)}>Delete</button>
             </td>
         </tr>
@@ -29,7 +32,7 @@ const ProjectList = ({projects, deleteProject}) => {
     return (
         <div>
             <div className='padding-site'>
-                <Link className='app-button ' to='/project/create'>Create</Link>
+                <Link className='button-link ' to='/project/create'>Create</Link>
             </div>
             <table className='bordered'>
                 <caption>Table with Projects</caption>
@@ -45,6 +48,9 @@ const ProjectList = ({projects, deleteProject}) => {
                     </th>
                     <th>
                         Users
+                    </th>
+                     <th>
+                        Change
                     </th>
                     <th>
                         Delete
