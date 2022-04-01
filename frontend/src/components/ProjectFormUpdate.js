@@ -1,15 +1,19 @@
 import React from "react";
+import {useParams} from "react-router-dom";
+
 
 class ProjectFormUpdate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {id: 0, name: '', description: '', repository: '', user: []}
-        this.getProjectData(this.props.id)
+        this.getProjectData()
     }
 
-    getProjectData(id) {
+    getProjectData() {
+        const id = parseInt(window.location.pathname.replace(/[^0-9]/g,""))
         let projectData = this.props.projects.filter(item => item.id === id)
         this.setState({
+            'id': id,
             'name': projectData.name,
             'description': projectData.description,
             'repository': projectData.repository,
@@ -42,7 +46,7 @@ class ProjectFormUpdate extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        this.props.updateProject(this.state.name, this.state.description, this.state.repository, this.state.user)
+        this.props.updateProject(this.state.id, this.state.name, this.state.description, this.state.repository, this.state.user)
     }
 
     render() {
@@ -50,7 +54,6 @@ class ProjectFormUpdate extends React.Component {
             <div className="page-create-form padding-site">
                 <form onSubmit={(event) => this.handleSubmit(event)}>
                     <fieldset className="create-form">
-
                         <legend className="create-form-legend">Create Project</legend>
                         <div className="create-form-div">
                             <label className="create-form-label" htmlFor="name">Name Project:</label>

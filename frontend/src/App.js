@@ -56,7 +56,7 @@ class App extends React.Component {
     }
     updateProject(id, name, description, repository, user) {
         const headers = this.get_headers()
-        const data = {name: name, description: description, repository: repository, users: user}
+        const data = {id:id, name: name, description: description, repository: repository, users: user}
         axios.put(get_url(`projects/${id}`), data, {headers}).then(
             response => {
                 window.location.href = `http://localhost:3000/projects/`;
