@@ -269,6 +269,24 @@
   width: 200px;
 }
 
+.projects__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px;
+}
+
+.search__input {
+  height: 35px;
+  background-color: #a2c5ec;
+  color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 3px;
+}
+.search__input::placeholder {
+  color: #FFFFFF;
+}
+
 .padding-site {
   padding-left: 8%;
   padding-right: 8%;

@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {useState} from "react"
+
 
 const ProjectItem = ({project, deleteProject}) => {
     return (
@@ -29,10 +31,23 @@ const ProjectItem = ({project, deleteProject}) => {
 }
 
 const ProjectList = ({projects, deleteProject}) => {
+    const [value, setValue] = useState('')
+
+    const filteredProjects = projects.filter(project => {
+        return project.name.toLowerCase().includes(value.toLowerCase())
+    })
+
     return (
         <div>
-            <div className='padding-site'>
+            <div className='projects__bar padding-site'>
                 <Link className='button-link ' to='/project/create'>Create</Link>
+                <form action="#" className='search__form'>
+                    <input
+                        type="text"
+                        placeholder="Search in the projects..."
+                        className="search__input"
+                        onChange={(event) => setValue(event.target.value)}/>
+                </form>
             </div>
             <table className='bordered'>
                 <caption>Table with Projects</caption>
@@ -49,15 +64,15 @@ const ProjectList = ({projects, deleteProject}) => {
                     <th>
                         Users
                     </th>
-                     <th>
+                    <th>
                         Change
                     </th>
                     <th>
                         Delete
                     </th>
                 </tr>
-                {projects.map((project) => <ProjectItem project={project}
-                                                        deleteProject={deleteProject}/>)}
+                {filteredProjects.map((project) => <ProjectItem project={project}
+                                                                deleteProject={deleteProject}/>)}
             </table>
         </div>
     )
