@@ -31,7 +31,7 @@ class ProjectModelViewSet(ModelViewSet):
 
 
 class ToDoModelViewSet(ModelViewSet):
-    queryset = ToDo.objects.all()
+    queryset = ToDo.objects.filter(active=True)
     # pagination_class = ToDoPageNumberPagination
     filter_class = ToDoFilter
 
@@ -39,6 +39,8 @@ class ToDoModelViewSet(ModelViewSet):
         if self.request.method in ['GET']:
             return ToDoModelSerializer
         return ToDoBaseModelSerializer
+
+
 
     def destroy(self, request, *args, **kwargs):
         try:
