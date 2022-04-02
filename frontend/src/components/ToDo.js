@@ -30,7 +30,7 @@ const ToDoList = ({todo, deleteToDo}) => {
     return (
         <div>
             <div className='padding-site'>
-                <Link className='app-button ' to='/todo/create'>Create</Link>
+                <Link className='button-link ' to='/todo/create'>Create</Link>
             </div>
             <table className='bordered'>
                 <caption>Table with ToDo</caption>
