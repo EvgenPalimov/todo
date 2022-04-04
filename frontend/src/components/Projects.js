@@ -21,7 +21,7 @@ const ProjectItem = ({project, deleteProject}) => {
                 </ol>
             </td>
             <td>
-                <Link className='button-link' to={`/project/update/${project.id}`}>Update</Link>
+                <Link className='button-link' to={`/projects/update/${project.id}/`}>Update</Link>
             </td>
             <td>
                 <button className='app-button' type='button' onClick={() => deleteProject(project.id)}>Delete</button>

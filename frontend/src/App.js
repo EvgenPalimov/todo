@@ -51,10 +51,23 @@ class App extends React.Component {
         })
     }
 
+    // updateProject(id, name, description, repository, user) {
+    //     const headers = this.get_headers()
+    //     const data = {id:id, name: name, description: description, repository: repository, users: user}
+    //     axios.put(get_url(`projects/${id}`), data, {headers}).then(
+    //         response => {
+    //             window.location.href = `http://localhost:3000/projects/`;
+    //         }
+    //     ).catch(error => {
+    //         console.log(error)
+    //         this.setState({projects: []})
+    //     })
+    // }
+
     updateProject(id, name, description, repository, user) {
         const headers = this.get_headers()
         const data = {id:id, name: name, description: description, repository: repository, users: user}
-        axios.put(get_url(`projects/${id}`), data, {headers}).then(
+        axios.put(get_url(`projects/${id}/`), data, {headers}).then(
             response => {
                 window.location.href = `http://localhost:3000/projects/`;
             }
@@ -210,12 +223,12 @@ class App extends React.Component {
                             <Route exact path='/projects'
                                    component={() => <ProjectList projects={this.state.projects}
                                                                  deleteProject={(id) => this.deleteProject(id)}/>}/>
-                             <Route exact path='/project/update/:id'
+                             <Route exact path='/projects/update/:id/'
                                    component={() => <ProjectFormUpdate projects={this.state.projects}
                                                                        users={this.state.users}
                                                                        updateProject={(id, name, description, repository, user) =>
                                                                            this.updateProject(id, name, description, repository, user)}/>}/>
-                            <Route path='/project/:id'> <ProjectDetailsList projects={this.state.projects}/> </Route>
+                            <Route path='/project/:id/'> <ProjectDetailsList projects={this.state.projects}/> </Route>
                             <Route exact path='/todo/create' component={() => <ToDoFormCreate users={this.state.users}
                                                                                               projects={this.state.projects}
                                                                                               createToDo={(project, text, user) =>
