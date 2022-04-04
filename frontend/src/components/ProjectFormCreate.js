@@ -6,7 +6,7 @@ class ProjectFormCreate extends React.Component {
         this.state = {name: '', description: '', repository: '', user: []}
     }
 
-    handleProjectChange(event) {
+    handleUserChange(event) {
         if (!event.target.selectedOptions) {
             this.setState({
                 'user': []
@@ -59,9 +59,9 @@ class ProjectFormCreate extends React.Component {
                                    value={this.state.repository} onChange={(event) => this.handleChange(event)}/>
                         </div>
                         <div className="create-form-div">
-                            <label className="create-form-label" htmlFor="project">Users:</label>
-                            <select className="create-form-select" name="project" multiple id="project"
-                                    onChange={(event) => this.handleProjectChange(event)}>
+                            <label className="create-form-label" htmlFor="user">Users:</label>
+                            <select className="create-form-select" name="user" multiple id="user"
+                                    onChange={(event) => this.handleUserChange(event)}>
                                 {this.props.users.map((item) => <option value={item.id}> {item.username} </option>)}
                             </select>
                         </div>

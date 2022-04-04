@@ -20,6 +20,9 @@ const ToDoItem = ({toDoElement, deleteToDo}) => {
                 {toDoElement.updated}
             </td>
             <td>
+                <Link className='button-link' to={`/todo/update/${toDoElement.id}/`}>Update</Link>
+            </td>
+            <td>
                 <button className='app-button' type='button' onClick={() => deleteToDo(toDoElement.id)}>Delete</button>
             </td>
         </tr>
@@ -50,7 +53,10 @@ const ToDoList = ({todo, deleteToDo}) => {
                     <th>
                         Updated
                     </th>
-                     <th>
+                    <th>
+                        Change
+                    </th>
+                    <th>
                         Delete
                     </th>
                 </tr>
@@ -58,7 +64,7 @@ const ToDoList = ({todo, deleteToDo}) => {
                                                      deleteToDo={deleteToDo}/>)}
             </table>
         </div>
-)
+    )
 }
 
 export default ToDoList

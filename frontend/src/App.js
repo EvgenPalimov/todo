@@ -15,6 +15,7 @@ import ProjectDetailsList from "./components/ProjectDetails";
 import Cookies from "universal-cookie";
 import ToDoFormCreate from "./components/ToDoFormCreate";
 import ProjectFormUpdate from "./components/ProjectFormUpdate";
+import ToDoFormUpdate from "./components/ToDoFormUpdate";
 
 
 const DOMAIN = 'http://127.0.0.1:8000/api/'
@@ -51,22 +52,9 @@ class App extends React.Component {
         })
     }
 
-    // updateProject(id, name, description, repository, user) {
-    //     const headers = this.get_headers()
-    //     const data = {id:id, name: name, description: description, repository: repository, users: user}
-    //     axios.put(get_url(`projects/${id}`), data, {headers}).then(
-    //         response => {
-    //             window.location.href = `http://localhost:3000/projects/`;
-    //         }
-    //     ).catch(error => {
-    //         console.log(error)
-    //         this.setState({projects: []})
-    //     })
-    // }
-
     updateProject(id, name, description, repository, user) {
         const headers = this.get_headers()
-        const data = {id:id, name: name, description: description, repository: repository, users: user}
+        const data = {id: id, name: name, description: description, repository: repository, users: user}
         axios.put(get_url(`projects/${id}/`), data, {headers}).then(
             response => {
                 window.location.href = `http://localhost:3000/projects/`;
@@ -100,8 +88,17 @@ class App extends React.Component {
         })
     }
 
-    updateToDo(id) {
-
+    updateToDo(id, project, text, user) {
+        const headers = this.get_headers()
+        const data = {project: project, text: text, user: user}
+        axios.put(get_url(`todo/${id}/`), data, {headers}).then(
+            response => {
+                window.location.href = 'http://localhost:3000/todo/';
+            }
+        ).catch(error => {
+            console.log(error)
+            this.setState({todo: []})
+        })
     }
 
     deleteToDo(id) {
@@ -223,12 +220,17 @@ class App extends React.Component {
                             <Route exact path='/projects'
                                    component={() => <ProjectList projects={this.state.projects}
                                                                  deleteProject={(id) => this.deleteProject(id)}/>}/>
-                             <Route exact path='/projects/update/:id/'
+                            <Route exact path='/projects/update/:id/'
                                    component={() => <ProjectFormUpdate projects={this.state.projects}
                                                                        users={this.state.users}
                                                                        updateProject={(id, name, description, repository, user) =>
                                                                            this.updateProject(id, name, description, repository, user)}/>}/>
                             <Route path='/project/:id/'> <ProjectDetailsList projects={this.state.projects}/> </Route>
+                            <Route exact path='/todo/update/:id/'
+                                   component={() => <ToDoFormUpdate users={this.state.users}
+                                                                    projects={this.state.projects}
+                                                                    updateToDo={(id, project, text, user) =>
+                                                                        this.updateToDo(id, project, text, user)}/>}/>
                             <Route exact path='/todo/create' component={() => <ToDoFormCreate users={this.state.users}
                                                                                               projects={this.state.projects}
                                                                                               createToDo={(project, text, user) =>
