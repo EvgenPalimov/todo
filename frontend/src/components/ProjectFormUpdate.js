@@ -5,7 +5,7 @@ class ProjectFormUpdate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            id: parseInt(window.location.pathname.replace(/[^0-9]/g, "")),
+            id: 0,
             name: '',
             description: '',
             repository: '',
@@ -40,6 +40,10 @@ class ProjectFormUpdate extends React.Component {
         this.props.updateProject(this.state.id, this.state.name, this.state.description, this.state.repository, this.state.user)
     }
 
+    componentDidMount() {
+        let idProject = parseInt(window.location.pathname.replace(/[^0-9]/g, ""))
+        this.setState({id:idProject})
+    }
 
     render() {
         return (

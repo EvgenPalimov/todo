@@ -5,7 +5,7 @@ class ToDoFormUpdate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            id: parseInt(window.location.pathname.replace(/[^0-9]/g, "")),
+            id: 0,
             project: 1,
             text: '',
             user: 1
@@ -21,6 +21,11 @@ class ToDoFormUpdate extends React.Component {
     handleSubmit(event) {
         event.preventDefault()
         this.props.updateToDo(this.state.id, this.state.project, this.state.text, this.state.user)
+    }
+
+    componentDidMount() {
+        let idToDo = parseInt(window.location.pathname.replace(/[^0-9]/g, ""))
+        this.setState({id: idToDo})
     }
 
     render() {
