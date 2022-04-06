@@ -239,7 +239,6 @@ class App extends React.Component {
                                                                                  deleteToDo={(id) => this.deleteToDo(id)}/>}/>
                             <Route exact path='/login' component={() => <LoginForm
                                 login={(username, password) => this.login(username, password)}/>}/>
-                            <Redirect from={'/'} to={'/users'}/>
                             <Route component={NotFound404}/>
                         </Switch>
                     </div>
