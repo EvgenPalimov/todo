@@ -8,8 +8,8 @@ FAKE = Faker()
 class Command(BaseCommand):
     help = 'Create Superuser and some test users'
 
-    def add_arguments(self, parser):
-        parser.add_argument('count', type=int)
+    # def add_arguments(self, parser):
+    #     parser.add_argument('count', type=int)
 
     def handle(self, *args, **options):
 
@@ -20,7 +20,7 @@ class Command(BaseCommand):
         User.objects.create_superuser(
             username='uegene', first_name='Uegene',last_name='Pavlovich',
             email='uegene@mail.ru', password='1')
-        user_count = options['count']
+        user_count = 10
 
         # Create user data
         first_name = [FAKE.unique.first_name() for _ in range(user_count)]
