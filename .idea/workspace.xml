@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="work to docker v2.15" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="work to docker v2.16">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +41,7 @@
       <updated>1649187569397</updated>
       <workItem from="1649187575946" duration="189000" />
       <workItem from="1649189575310" duration="896000" />
-      <workItem from="1649259067076" duration="6443000" />
+      <workItem from="1649259067076" duration="7564000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -124,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649265517805</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="work to docker v2.16">
+      <created>1649265757219</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649265757219</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +164,7 @@
     <MESSAGE value="work to docker v2.13" />
     <MESSAGE value="work to docker v2.14" />
     <MESSAGE value="work to docker v2.15" />
-    <option name="LAST_COMMIT_MESSAGE" value="work to docker v2.15" />
+    <MESSAGE value="work to docker v2.16" />
+    <option name="LAST_COMMIT_MESSAGE" value="work to docker v2.16" />
   </component>
 </project>
