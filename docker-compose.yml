@@ -5,7 +5,7 @@ services:
     privileged: true
     ports:
       - '5432:5432'
-    - environment:
+    environment:
         POSTGRES_USER: 'uegene'
         POSTGRES_PASSWORD: '1'
         POSTGRES_DB: 'db'
