@@ -6,9 +6,9 @@ services:
     ports:
       - 5432:5432
     environment:
-        POSTGRES_USER: 'root'
-        POSTGRES_PASSWORD: '1'
-        POSTGRES_DB: 'db'
+        POSTGRES_USER: uegene
+        POSTGRES_PASSWORD: 1
+        POSTGRES_DB: db
 
   backend:
     build: ./todo
