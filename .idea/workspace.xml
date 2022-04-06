@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="work to docker v2.11" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="work to docker v2.12" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +38,7 @@
       <updated>1649187569397</updated>
       <workItem from="1649187575946" duration="189000" />
       <workItem from="1649189575310" duration="896000" />
-      <workItem from="1649259067076" duration="4891000" />
+      <workItem from="1649259067076" duration="5195000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649263952559</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="work to docker v2.12">
+      <created>1649264147796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649264147796</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +122,7 @@
     <MESSAGE value="work to docker v2.9" />
     <MESSAGE value="work to docker v2.10" />
     <MESSAGE value="work to docker v2.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="work to docker v2.11" />
+    <MESSAGE value="work to docker v2.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="work to docker v2.12" />
   </component>
 </project>
