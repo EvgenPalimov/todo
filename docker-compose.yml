@@ -19,7 +19,7 @@ services:
       bash -c "python3 manage.py migrate &&
       python3 manage.py create_users 10 &&
       python3 manage.py create_data_project_and_todo 10 &&
-      python3 manage.py runserver 127.0.0.1:8080
+      gunicorn todo.wsgi -b 0.0.0.0:8080
       "
     depends_on:
       - db
