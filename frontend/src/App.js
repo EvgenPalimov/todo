@@ -122,10 +122,8 @@ class App extends React.Component {
     }
 
     login(username, password) {
-        console.log("test")
         axios.post(get_url('token/'), {username: username, password: password})
             .then(response => {
-                console.log(response.data.access);
                 cookies.set('login', username);
                 cookies.set('access', response.data.access);
                 cookies.set('refresh', response.data.refresh);
