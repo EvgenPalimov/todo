@@ -4,17 +4,17 @@ services:
     image: postgres:13.1
     privileged: true
     ports:
-      - '5432:5432'
+      - 5432:5432
     environment:
-        POSTGRES_USER: 'uegene'
-        POSTGRES_PASSWORD: '1'
-        POSTGRES_DB: 'db'
+        POSTGRES_USER: uegene
+        POSTGRES_PASSWORD: 1
+        POSTGRES_DB: db
 
   backend:
     build: ./todo
     privileged: true
     ports:
-      - '8080:8080'
+      - 8080:8080
     command:
       bash -c "python3 manage.py migrate &&
       python3 manage.py create_users.py &&
