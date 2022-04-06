@@ -17,7 +17,7 @@ services:
       - 8080:8080
     command:
       bash -c "python3 manage.py migrate &&
-      python3 manage.py create_users.py &&
+      python3 manage.py create_users &&
       python3 manage.py create_data_project_and_todo &&
       python3 manage.py runserver -b 127.0.0.1:8080
       "
