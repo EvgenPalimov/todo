@@ -6,15 +6,15 @@ services:
     ports:
       - 5432:5432
     environment:
-        POSTGRES_USER: uegene
+        POSTGRES_USER: root
         POSTGRES_PASSWORD: 1
         POSTGRES_DB: db
 
   backend:
     build: ./todo
     privileged: true
-    expose:
-      - 8080
+    ports:
+      - 8080:8080
     command:
       bash -c "python3 manage.py migrate &&
       python3 manage.py create_users 10 &&
