@@ -187,9 +187,9 @@ REST_FRAMEWORK = {
     # 'PAGE_SIZE': 10
 }
 
-GRAPHENE = {
-    'SCHEMA': 'project.schema.schema',
-}
+# GRAPHENE = {
+#     'SCHEMA': 'project.schema.schema',
+# }
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=20),
