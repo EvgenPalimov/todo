@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r+c_l)hsbz3*)pv3!3uz+f&jfn!p%(kv^x$@v11(yyboe9*a#2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
@@ -70,7 +70,7 @@ ROOT_URLCONF = 'todo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [ BASE_DIR / '../../frontend/build' ]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -101,7 +101,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'db',
         'USERNAME': 'uegene',
-        'PASSWORD': '1',
+        'PASSWORD': 1,
         'HOST': 'db',
         'PORT': '5432'
     }
