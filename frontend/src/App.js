@@ -238,6 +238,7 @@ class App extends React.Component {
                             <Route exact path='/login' component={() => <LoginForm
                                 login={(username, password) => this.login(username, password)}/>}/>
                             <Route component={NotFound404}/>
+                            <Redirect from="/" to="/projects" />
                         </Switch>
                     </div>
                     <div className="footer">

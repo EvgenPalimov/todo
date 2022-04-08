@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="work to docker v2.27">
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
       <workItem from="1649259067076" duration="12087000" />
       <workItem from="1649272235847" duration="318000" />
       <workItem from="1649347957471" duration="523000" />
-      <workItem from="1649399661634" duration="2967000" />
+      <workItem from="1649399661634" duration="13763000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -221,7 +220,140 @@
       <option name="project" value="LOCAL" />
       <updated>1649401268036</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="work to docker v2.28">
+      <created>1649417579512</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1649417579512</updated>
+    </task>
+    <task id="LOCAL-00027" summary="work to docker v2.29">
+      <created>1649417976424</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1649417976424</updated>
+    </task>
+    <task id="LOCAL-00028" summary="work to docker v2.30">
+      <created>1649418756184</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1649418756185</updated>
+    </task>
+    <task id="LOCAL-00029" summary="work to docker v2.31">
+      <created>1649420565986</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1649420565986</updated>
+    </task>
+    <task id="LOCAL-00030" summary="work to docker v2.32">
+      <created>1649422062043</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1649422062043</updated>
+    </task>
+    <task id="LOCAL-00031" summary="work to docker v2.33">
+      <created>1649422798449</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1649422798449</updated>
+    </task>
+    <task id="LOCAL-00032" summary="work to docker v2.34">
+      <created>1649423170174</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1649423170174</updated>
+    </task>
+    <task id="LOCAL-00033" summary="work to docker v2.35">
+      <created>1649423371475</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1649423371475</updated>
+    </task>
+    <task id="LOCAL-00034" summary="work to docker v2.36">
+      <created>1649423418444</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1649423418444</updated>
+    </task>
+    <task id="LOCAL-00035" summary="work to docker v2.37">
+      <created>1649423901073</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1649423901073</updated>
+    </task>
+    <task id="LOCAL-00036" summary="work to docker v2.38">
+      <created>1649424165519</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1649424165519</updated>
+    </task>
+    <task id="LOCAL-00037" summary="work to docker v2.39">
+      <created>1649424417841</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1649424417841</updated>
+    </task>
+    <task id="LOCAL-00038" summary="work to docker v2.40">
+      <created>1649424606032</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1649424606032</updated>
+    </task>
+    <task id="LOCAL-00039" summary="work to docker v2.41">
+      <created>1649426022773</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1649426022773</updated>
+    </task>
+    <task id="LOCAL-00040" summary="work to docker v2.42">
+      <created>1649426185260</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1649426185260</updated>
+    </task>
+    <task id="LOCAL-00041" summary="work to docker v2.43">
+      <created>1649426719669</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1649426719669</updated>
+    </task>
+    <task id="LOCAL-00042" summary="work to docker v2.44">
+      <created>1649426943835</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1649426943835</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Work to project to the end">
+      <created>1649428752395</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1649428752395</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Work to project to the end">
+      <created>1649428764168</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1649428764168</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,21 +372,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.5" />
-    <MESSAGE value="work to docker v2.6" />
-    <MESSAGE value="work to docker v2.7" />
-    <MESSAGE value="work to docker v2.8" />
-    <MESSAGE value="work to docker v2.9" />
-    <MESSAGE value="work to docker v2.10" />
-    <MESSAGE value="work to docker v2.11" />
-    <MESSAGE value="work to docker v2.12" />
-    <MESSAGE value="work to docker v2.13" />
-    <MESSAGE value="work to docker v2.14" />
-    <MESSAGE value="work to docker v2.15" />
-    <MESSAGE value="work to docker v2.16" />
-    <MESSAGE value="work to docker v2.17" />
-    <MESSAGE value="work to docker v2.18" />
-    <MESSAGE value="work to docker v2.19" />
     <MESSAGE value="work to docker v2.21" />
     <MESSAGE value="work to docker v2.22" />
     <MESSAGE value="work to docker v2.23" />
@@ -262,6 +379,24 @@
     <MESSAGE value="work to docker v2.25" />
     <MESSAGE value="work to docker v2.26" />
     <MESSAGE value="work to docker v2.27" />
-    <option name="LAST_COMMIT_MESSAGE" value="work to docker v2.27" />
+    <MESSAGE value="work to docker v2.28" />
+    <MESSAGE value="work to docker v2.29" />
+    <MESSAGE value="work to docker v2.30" />
+    <MESSAGE value="work to docker v2.31" />
+    <MESSAGE value="work to docker v2.32" />
+    <MESSAGE value="work to docker v2.33" />
+    <MESSAGE value="work to docker v2.34" />
+    <MESSAGE value="work to docker v2.35" />
+    <MESSAGE value="work to docker v2.36" />
+    <MESSAGE value="work to docker v2.37" />
+    <MESSAGE value="work to docker v2.38" />
+    <MESSAGE value="work to docker v2.39" />
+    <MESSAGE value="work to docker v2.40" />
+    <MESSAGE value="work to docker v2.41" />
+    <MESSAGE value="work to docker v2.42" />
+    <MESSAGE value="work to docker v2.43" />
+    <MESSAGE value="work to docker v2.44" />
+    <MESSAGE value="Work to project to the end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end" />
   </component>
 </project>
