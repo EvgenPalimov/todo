@@ -17,7 +17,7 @@ services:
       - 8080:8080
     command:
       bash -c "
-      ./wait-for-postgres.sh db 
+      ./wait-for-postgres.sh db
       python3 manage.py migrate &&
       python3 manage.py create_users 10 &&
       python3 manage.py create_data_project_and_todo 10 &&
@@ -29,13 +29,13 @@ services:
   nginx:
     build: ./ngnix
     ports:
-      - 8000:80
+      - 8001:80
     depends_on:
       - backend
 
   frontend:
     build: ./frontend
     ports:
-      - 80:80
+      - 8002:80
     depends_on:
       - nginx
