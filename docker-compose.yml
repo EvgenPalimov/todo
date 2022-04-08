@@ -13,8 +13,8 @@ services:
   backend:
     build: ./todo
     privileged: true
-    ports:
-      - 8080:8080
+    expose:
+      - 8080
     command:
       bash -c "
       ./wait-for-postgres.sh db
