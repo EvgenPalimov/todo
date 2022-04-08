@@ -113,8 +113,9 @@ class App extends React.Component {
 
     deleteUser(id) {
         const headers = this.get_headers();
-        axios.delete(get_url(`users/${id}`), {headers}).then(response => {
-            this.loadDataUsers(headers)
+        axios.delete(get_url(`users/${id}`), {headers})
+            .then(response => {
+                this.loadDataUsers(headers)
         }).catch(error => {
             console.log(error)
             this.setState({users: []})
