@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="work to docker v2.22">
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="work to docker v2.24">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +42,8 @@
       <workItem from="1649189575310" duration="896000" />
       <workItem from="1649259067076" duration="12087000" />
       <workItem from="1649272235847" duration="318000" />
+      <workItem from="1649347957471" duration="523000" />
+      <workItem from="1649399661634" duration="570000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -183,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649272501417</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="work to docker v2.23">
+      <created>1649348062426</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1649348062426</updated>
+    </task>
+    <task id="LOCAL-00022" summary="work to docker v2.24">
+      <created>1649348472303</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1649348472303</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +235,8 @@
     <MESSAGE value="work to docker v2.19" />
     <MESSAGE value="work to docker v2.21" />
     <MESSAGE value="work to docker v2.22" />
-    <option name="LAST_COMMIT_MESSAGE" value="work to docker v2.22" />
+    <MESSAGE value="work to docker v2.23" />
+    <MESSAGE value="work to docker v2.24" />
+    <option name="LAST_COMMIT_MESSAGE" value="work to docker v2.24" />
   </component>
 </project>
