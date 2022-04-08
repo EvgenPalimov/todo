@@ -122,7 +122,7 @@ class App extends React.Component {
     }
 
     login(username, password) {
-        axios.post(get_url('token/'), {username: username, password: password})
+        axios.post('http://127.0.0.1:8080/api/token/', {username: username, password: password})
             .then(response => {
                 cookies.set('login', username);
                 cookies.set('access', response.data.access);
