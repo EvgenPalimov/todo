@@ -44,7 +44,7 @@ class App extends React.Component {
         const data = {name: name, description: description, repository: repository, users: user}
         axios.post(get_url(`projects/`), data, {headers}).then(
             response => {
-                window.location.href = 'http://89.108.76.97/projects/';
+                window.location.href = '/projects/';
             }
         ).catch(error => {
             console.log(error)
@@ -57,7 +57,7 @@ class App extends React.Component {
         const data = {id: id, name: name, description: description, repository: repository, users: user}
         axios.put(get_url(`projects/${id}/`), data, {headers}).then(
             response => {
-                window.location.href = `http://89.108.76.97/projects/`;
+                window.location.href = `/projects/`;
             }
         ).catch(error => {
             console.log(error)
@@ -80,7 +80,7 @@ class App extends React.Component {
         const data = {project: project, text: text, user: user}
         axios.post(get_url(`todo/`), data, {headers}).then(
             response => {
-                window.location.href = 'http://89.108.76.97/todo/';
+                window.location.href = '/todo/';
             }
         ).catch(error => {
             console.log(error)
@@ -93,7 +93,7 @@ class App extends React.Component {
         const data = {project: project, text: text, user: user}
         axios.put(get_url(`todo/${id}/`), data, {headers}).then(
             response => {
-                window.location.href = 'http://89.108.76.97/todo/';
+                window.location.href = '/todo/';
             }
         ).catch(error => {
             console.log(error)
@@ -129,7 +129,7 @@ class App extends React.Component {
                 cookies.set('refresh', response.data.refresh);
                 this.setState({'auth': {username: username, isLogin: true}});
                 this.loadData();
-                window.location.href = 'http://89.108.76.97/users/';
+                window.location.href = '/users/';
             }).catch(error => {
             if (error.response.status === 401) {
                 alert('Неверный логин или пароль');
