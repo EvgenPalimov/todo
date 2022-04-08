@@ -29,13 +29,13 @@ services:
   nginx:
     build: ./ngnix
     ports:
-      - 8001:80
+      - 8000:80
     depends_on:
       - backend
 
   frontend:
     build: ./frontend
     ports:
-      - 8002:80
+      - 8000:80
     depends_on:
       - nginx
