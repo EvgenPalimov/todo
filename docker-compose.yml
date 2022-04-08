@@ -16,7 +16,9 @@ services:
     ports:
       - 8080:8080
     command:
-      bash -c "python3 manage.py migrate &&
+      bash -c "
+      ./wait-for-postgres.sh db 
+      python3 manage.py migrate &&
       python3 manage.py create_users 10 &&
       python3 manage.py create_data_project_and_todo 10 &&
       gunicorn todo.wsgi -b 0.0.0.0:8080
