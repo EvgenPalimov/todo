@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v.5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.cf8c5625.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.cf8c5625.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.cf8c5625.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngnix/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/ngnix/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/todo/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v.6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +44,7 @@
       <workItem from="1649399661634" duration="13763000" />
       <workItem from="1649442976430" duration="203000" />
       <workItem from="1649444334093" duration="2780000" />
-      <workItem from="1649482366156" duration="1979000" />
+      <workItem from="1649482366156" duration="2312000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -394,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649446461513</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Work to project to the end v.6">
+      <created>1649484479320</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1649484479321</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +408,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.25" />
     <MESSAGE value="work to docker v2.26" />
     <MESSAGE value="work to docker v2.27" />
     <MESSAGE value="work to docker v2.28" />
@@ -438,6 +432,7 @@
     <MESSAGE value="Work to project to the end v.3" />
     <MESSAGE value="Work to project to the end v.4" />
     <MESSAGE value="Work to project to the end v.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v.5" />
+    <MESSAGE value="Work to project to the end v.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v.6" />
   </component>
 </project>

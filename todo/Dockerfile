@@ -9,11 +9,5 @@ RUN pip3 install -r requirements.txt
 COPY wait-for-postgres.sh .
 RUN chmod +x wait-for-postgres.sh
 
-ENV HOME=/home/app
-ENV APP_HOME=/home/app/web
-RUN mkdir $APP_HOME
-RUN mkdir $APP_HOME/staticfiles
-WORKDIR $APP_HOME
-
 RUN pip3 install gunicorn
 

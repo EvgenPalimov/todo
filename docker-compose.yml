@@ -23,8 +23,6 @@ services:
       python3 manage.py create_data_project_and_todo 10 &&
       gunicorn todo.wsgi -b 0.0.0.0:8080
       "
-    volumes:
-      - static_volume:/home/app/web/staticfiles
     depends_on:
       - db
 
@@ -32,8 +30,6 @@ services:
     build: ./ngnix
     ports:
       - 8000:80
-    volumes:
-      - static_volume:/home/app/web/staticfiles
     depends_on:
       - backend
 
