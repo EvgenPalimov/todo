@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v.6" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v.7">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e10776ed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e10776ed.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e10776ed.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,14 +52,7 @@
       <workItem from="1649399661634" duration="13763000" />
       <workItem from="1649442976430" duration="203000" />
       <workItem from="1649444334093" duration="2780000" />
-      <workItem from="1649482366156" duration="2312000" />
-    </task>
-    <task id="LOCAL-00001" summary="work to docker v2.5">
-      <created>1649259973448</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1649259973449</updated>
+      <workItem from="1649482366156" duration="2962000" />
     </task>
     <task id="LOCAL-00002" summary="work to docker v2.6">
       <created>1649262598873</created>
@@ -389,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649484479321</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Work to project to the end v.7">
+      <created>1649484936566</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1649484936568</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +416,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.26" />
     <MESSAGE value="work to docker v2.27" />
     <MESSAGE value="work to docker v2.28" />
     <MESSAGE value="work to docker v2.29" />
@@ -433,6 +440,7 @@
     <MESSAGE value="Work to project to the end v.4" />
     <MESSAGE value="Work to project to the end v.5" />
     <MESSAGE value="Work to project to the end v.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v.6" />
+    <MESSAGE value="Work to project to the end v.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v.7" />
   </component>
 </project>
