@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v1.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v1.1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +43,7 @@
       <workItem from="1649272235847" duration="318000" />
       <workItem from="1649347957471" duration="523000" />
       <workItem from="1649399661634" duration="2967000" />
+      <workItem from="1649488195209" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -228,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649487990185</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Work to project to the end v1.1">
+      <created>1649488248027</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1649488248027</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +276,7 @@
     <MESSAGE value="work to docker v2.26" />
     <MESSAGE value="work to docker v2.27" />
     <MESSAGE value="Work to project to the end v1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v1." />
+    <MESSAGE value="Work to project to the end v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v1.1" />
   </component>
 </project>
