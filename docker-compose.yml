@@ -11,7 +11,7 @@ services:
         POSTGRES_DB: db
 
   backend:
-    build: ./
+    build: .
     privileged: true
     expose:
       - 8080
