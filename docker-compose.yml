@@ -17,7 +17,6 @@ services:
       - 8080
     command:
       bash -c "
-      ./wait-for-postgres.sh db
       python3 manage.py migrate &&
       python3 manage.py create_users 10 &&
       python3 manage.py create_data_project_and_todo 10 &&
