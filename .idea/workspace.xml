@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v.7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e10776ed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e10776ed.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e10776ed.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="Work to project to the end v.8-1">
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/todo/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +47,7 @@
       <workItem from="1649399661634" duration="13763000" />
       <workItem from="1649442976430" duration="203000" />
       <workItem from="1649444334093" duration="2780000" />
-      <workItem from="1649482366156" duration="2962000" />
-    </task>
-    <task id="LOCAL-00002" summary="work to docker v2.6">
-      <created>1649262598873</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1649262598873</updated>
-    </task>
-    <task id="LOCAL-00003" summary="work to docker v2.7">
-      <created>1649262837021</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1649262837021</updated>
+      <workItem from="1649482366156" duration="3309000" />
     </task>
     <task id="LOCAL-00004" summary="work to docker v2.8">
       <created>1649263221067</created>
@@ -397,7 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649484936568</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Work to project to the end v.8">
+      <created>1649485481847</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1649485481847</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Work to project to the end v.8-1">
+      <created>1649485573560</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1649485573560</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,8 +411,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.27" />
-    <MESSAGE value="work to docker v2.28" />
     <MESSAGE value="work to docker v2.29" />
     <MESSAGE value="work to docker v2.30" />
     <MESSAGE value="work to docker v2.31" />
@@ -441,6 +434,8 @@
     <MESSAGE value="Work to project to the end v.5" />
     <MESSAGE value="Work to project to the end v.6" />
     <MESSAGE value="Work to project to the end v.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v.7" />
+    <MESSAGE value="Work to project to the end v.8" />
+    <MESSAGE value="Work to project to the end v.8-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work to project to the end v.8-1" />
   </component>
 </project>
