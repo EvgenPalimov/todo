@@ -20,7 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r+c_l)hsbz3*)pv3!3uz+f&jfn!p%(kv^x$@v11(yyboe9*a#2'
+SECRET_KEY = \
+    'django-insecure-r+c_l)hsbz3*)pv3!3uz+f&jfn!p%(kv^x$@v11(yyboe9*a#2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -33,9 +34,6 @@ CORS_ALLOWED_ORIGINS = [
     'http://0.0.0.0:8000',
     'http://89.108.76.97:8000',
 ]
-
-
-
 
 # Application definition
 
@@ -75,7 +73,7 @@ ROOT_URLCONF = 'todo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR / 'frontend/build/'],
+        'DIRS': [BASE_DIR / 'frontend/build/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,16 +114,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'NumericPasswordValidator',
     },
 ]
 
@@ -144,7 +146,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '../frontend/build/static/',)
+# STATIC_ROOT = os.path.join(BASE_DIR, '../frontend/build/static/',)
+STATICFILES_DIRS = (BASE_DIR / 'static',)
 
 AUTH_USER_MODEL = 'usersapp.User'
 
@@ -155,7 +158,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
 
-     'DEFAULT_RENDERER_CLASSES': (
+    'DEFAULT_RENDERER_CLASSES': (
         'djangorestframework_camel_case.render.CamelCaseJSONRenderer',
         'djangorestframework_camel_case.render.CamelCaseBrowsableAPIRenderer',
     ),
@@ -170,7 +173,8 @@ REST_FRAMEWORK = {
         'no_underscore_before_number': True,
     },
 
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend'],
 
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
@@ -183,8 +187,10 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
 
-    'DEFAULT_VERSIONING_CLASS':'rest_framework.versioning.QueryParameterVersioning',
-    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_VERSIONING_CLASS':
+        'rest_framework.versioning.QueryParameterVersioning',
+    # 'DEFAULT_PAGINATION_CLASS':
+    # 'rest_framework.pagination.LimitOffsetPagination',
     # 'PAGE_SIZE': 10
 }
 

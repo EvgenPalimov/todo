@@ -6,7 +6,8 @@ from rest_framework.viewsets import ModelViewSet
 
 from project.filters import ProjectFilter, ToDoFilter
 from project.models import Project, ToDo
-from project.serializers import ProjectModelSerializer, ToDoModelSerializer, ProjectBaseModelSerializer, \
+from project.serializers import ProjectModelSerializer, ToDoModelSerializer, \
+    ProjectBaseModelSerializer, \
     ToDoBaseModelSerializer
 
 
@@ -39,8 +40,6 @@ class ToDoModelViewSet(ModelViewSet):
         if self.request.method in ['GET']:
             return ToDoModelSerializer
         return ToDoBaseModelSerializer
-
-
 
     def destroy(self, request, *args, **kwargs):
         try:

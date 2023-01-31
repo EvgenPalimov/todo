@@ -5,7 +5,6 @@ from usersapp.models import User
 
 
 class ProjectBaseModelSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Project
         fields = '__all__'
