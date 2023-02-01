@@ -17,7 +17,7 @@ import ToDoFormCreate from "./components/ToDoFormCreate";
 import ProjectFormUpdate from "./components/ProjectFormUpdate";
 import ToDoFormUpdate from "./components/ToDoFormUpdate";
 
-const DOMAIN = 'http://89.108.76.97:8000/api/'
+const DOMAIN = 'http://46.19.64.201:8000/api/'
 const get_url = (url) => `${DOMAIN}${url}`
 const cookies = new Cookies()
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="run to server v.1" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="run to server v.2.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,17 +30,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/palim/PycharmProjects/todo/todo&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/palim/PycharmProjects/todo/todo",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="todo" type="Python.DjangoServer" factoryName="Django server">
       <module name="Django Rest" />
@@ -111,7 +113,7 @@
       <workItem from="1672739042114" duration="999000" />
       <workItem from="1675183104136" duration="3881000" />
       <workItem from="1675191421180" duration="380000" />
-      <workItem from="1675248666653" duration="1109000" />
+      <workItem from="1675248666653" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -330,7 +332,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675251346329</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="run to server v.2">
+      <created>1675251969079</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1675251969079</updated>
+    </task>
+    <task id="LOCAL-00033" summary="run to server v.2.1">
+      <created>1675252031180</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1675252031180</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,8 +367,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.8" />
-    <MESSAGE value="work to docker v2.9" />
     <MESSAGE value="work to docker v2.10" />
     <MESSAGE value="work to docker v2.11" />
     <MESSAGE value="work to docker v2.12" />
@@ -376,7 +390,9 @@
     <MESSAGE value="run to server" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="run to server v.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="run to server v.1" />
+    <MESSAGE value="run to server v.2" />
+    <MESSAGE value="run to server v.2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="run to server v.2.1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_Rest$settings.coverage" NAME="settings Coverage Results" MODIFIED="1670759247007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/todo/todo" />
