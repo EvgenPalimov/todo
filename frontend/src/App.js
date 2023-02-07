@@ -28,7 +28,6 @@ import UserDetailsList from "./components/UserDetails";
 
 const DOMAIN = 'http://46.19.64.201:8000/api/'
 const get_url = (url) => `${DOMAIN}${url}`
-const cookies = new Cookies()
 
 class App extends React.Component {
     constructor(props) {
@@ -156,9 +155,9 @@ class App extends React.Component {
     login(username, password) {
         axios.post(get_url('token/'), {username: username, password: password})
             .then(response => {
-                cookies.set('login', username, { expires: 7, path: '' });
-                cookies.set('access', response.data.access, { expires: 7, path: '' });
-                cookies.set('refresh', response.data.refresh, { expires: 7, path: '' });
+                Cookies.set('login', username, { expires: 7, path: '' });
+                Cookies.set('access', response.data.access, { expires: 7, path: '' });
+                Cookies.set('refresh', response.data.refresh, { expires: 7, path: '' });
                 this.setState({'auth': {username: username, isLogin: true}});
                 this.loadData();
             }).catch(error => {
@@ -171,9 +170,9 @@ class App extends React.Component {
     }
 
     logout() {
-        cookies.set('login', '', {path: '' });
-        cookies.set('access', '', {path: '' });
-        cookies.set('refresh', '', {path: '' });
+        Cookies.set('login', '', {path: '' });
+        Cookies.set('access', '', {path: '' });
+        Cookies.set('refresh', '', {path: '' });
         this.setState({'auth': {username: '', isLogin: false}});
         this.setState({'staff': false});
         window.location.href = '/login/';
@@ -184,7 +183,7 @@ class App extends React.Component {
             'Content-Type': 'application/json'
         };
         if (this.state.auth.isLogin === true) {
-            const token = cookies.get('access');
+            const token = Cookies.get('access');
             headers['Authorization'] = 'Bearer ' + token
         }
         return headers
@@ -234,7 +233,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        const username = cookies.get('login');
+        const username = Cookies.get('login');
         if ((username !== '') && (username != null)) {
             this.setState({'auth': {username: username, isLogin: true}}, () => this.loadData());
         }
