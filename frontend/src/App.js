@@ -17,7 +17,7 @@ import LoginForm from "./components/Auth"
 import Footer from "./components/Footer";
 import NotFound404 from "./components/NotFound404";
 import ProjectDetailsList from "./components/ProjectDetails";
-import cookie from 'react-cookie';
+import Cookies from "universal-cookie";
 import ToDoFormCreate from "./components/ToDoFormCreate";
 import ProjectFormUpdate from "./components/ProjectFormUpdate";
 import ToDoFormUpdate from "./components/ToDoFormUpdate";
@@ -27,7 +27,9 @@ import UserDetailsList from "./components/UserDetails";
 
 
 const DOMAIN = 'http://46.19.64.201:8000/api/'
+const FRONT = 'http://46.19.64.201:8000/'
 const get_url = (url) => `${DOMAIN}${url}`
+const cookies = new Cookies()
 
 class App extends React.Component {
     constructor(props) {
@@ -155,9 +157,9 @@ class App extends React.Component {
     login(username, password) {
         axios.post(get_url('token/'), {username: username, password: password})
             .then(response => {
-                cookie.save('login', username, { expires: 7, path: '' });
-                cookie.save('access', response.data.access, { expires: 7, path: '' });
-                cookie.save('refresh', response.data.refresh, { expires: 7, path: '' });
+                cookies.set('login', username, { path: '/' });
+                cookies.set('access', response.data.access, { path: '/' });
+                cookies.set('refresh', response.data.refresh, { path: '/' });
                 this.setState({'auth': {username: username, isLogin: true}});
                 this.loadData();
             }).catch(error => {
@@ -170,9 +172,9 @@ class App extends React.Component {
     }
 
     logout() {
-        cookie.save('login', '', {path: '' });
-        cookie.save('access', '', {path: '' });
-        cookie.save('refresh', '', {path: '' });
+        cookies.set('login', '', { path: '/' });
+        cookies.set('access', '', { path: '/' });
+        cookies.set('refresh', '', { path: '/' });
         this.setState({'auth': {username: '', isLogin: false}});
         this.setState({'staff': false});
         window.location.href = '/login/';
@@ -183,7 +185,7 @@ class App extends React.Component {
             'Content-Type': 'application/json'
         };
         if (this.state.auth.isLogin === true) {
-            const token = cookie.load('access');
+            const token = cookies.get('access');
             headers['Authorization'] = 'Bearer ' + token
         }
         return headers
@@ -233,7 +235,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        const username = cookie.load('login');
+        const username = cookies.get('login');
         if ((username !== '') && (username != null)) {
             this.setState({'auth': {username: username, isLogin: true}}, () => this.loadData());
         }

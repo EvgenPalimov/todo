@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.16">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.17">
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,14 +149,7 @@
       <workItem from="1675530161616" duration="373000" />
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
-      <workItem from="1675773120016" duration="19826000" />
-    </task>
-    <task id="LOCAL-00004" summary="work to docker v2.8">
-      <created>1649263221067</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1649263221067</updated>
+      <workItem from="1675773120016" duration="20199000" />
     </task>
     <task id="LOCAL-00005" summary="work to docker v2.9">
       <created>1649263702816</created>
@@ -494,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675803890048</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="frontend build v.17">
+      <created>1675804605023</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1675804605023</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="the end" />
     <MESSAGE value="run to server" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="run to server v.1" />
@@ -540,19 +539,20 @@
     <MESSAGE value="frontend build v.14" />
     <MESSAGE value="frontend build v.15" />
     <MESSAGE value="frontend build v.16" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.16" />
+    <MESSAGE value="frontend build v.17" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.17" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
-          <line>287</line>
+          <line>289</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
-          <line>252</line>
+          <line>254</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
