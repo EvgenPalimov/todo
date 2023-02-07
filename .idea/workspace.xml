@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.3">
-      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.8e00bd5a.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.00dbd8d5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.8e00bd5a.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.00dbd8d5.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.8e00bd5a.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.00dbd8d5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +146,7 @@
       <workItem from="1675530161616" duration="373000" />
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
-      <workItem from="1675773120016" duration="12183000" />
+      <workItem from="1675773120016" duration="12493000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -428,7 +421,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675796292853</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="frontend build v.4">
+      <created>1675796594446</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1675796594446</updated>
+    </task>
+    <task id="LOCAL-00041" summary="frontend build v.5">
+      <created>1675796820137</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1675796820137</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,8 +456,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.16" />
-    <MESSAGE value="work to docker v2.17" />
     <MESSAGE value="work to docker v2.18" />
     <MESSAGE value="work to docker v2.19" />
     <MESSAGE value="work to docker v2.21" />
@@ -474,7 +479,9 @@
     <MESSAGE value="frontend build v.2" />
     <MESSAGE value="backend change cors" />
     <MESSAGE value="frontend build v.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.3" />
+    <MESSAGE value="frontend build v.4" />
+    <MESSAGE value="frontend build v.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
