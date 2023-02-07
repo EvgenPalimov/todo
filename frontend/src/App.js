@@ -25,9 +25,9 @@ import UserFormUpdate from "./components/UserFormUpdate";
 import UserFormCreate from "./components/UserFormCreate";
 import UserDetailsList from "./components/UserDetails";
 
-// const DOMAIN = 'http://46.19.64.201:8000/api/'
-const DOMAIN = 'http://46.19.64.201/api/'
-const FRONT = 'http://46.19.64.201/'
+
+const DOMAIN = 'http://46.19.64.201:8000/api/'
+const FRONT = 'http://46.19.64.201:8000/'
 const get_url = (url) => `${DOMAIN}${url}`
 const cookies = new Cookies()
 
