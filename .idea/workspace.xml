@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="add createUser, updateUser, validators" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +146,7 @@
       <workItem from="1675530161616" duration="373000" />
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
-      <workItem from="1675773120016" duration="11379000" />
+      <workItem from="1675773120016" duration="11712000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -393,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675795756531</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="frontend build">
+      <created>1675795877194</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1675795877194</updated>
+    </task>
+    <task id="LOCAL-00037" summary="frontend build v.2">
+      <created>1675796035730</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1675796035730</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,8 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.12" />
-    <MESSAGE value="work to docker v2.13" />
     <MESSAGE value="work to docker v2.14" />
     <MESSAGE value="work to docker v2.15" />
     <MESSAGE value="work to docker v2.16" />
@@ -439,7 +451,9 @@
     <MESSAGE value="run to server v.2.1" />
     <MESSAGE value="run to server v.3" />
     <MESSAGE value="add createUser, updateUser, validators" />
-    <option name="LAST_COMMIT_MESSAGE" value="add createUser, updateUser, validators" />
+    <MESSAGE value="frontend build" />
+    <MESSAGE value="frontend build v.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
