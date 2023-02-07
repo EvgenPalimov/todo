@@ -9,11 +9,11 @@ const ProjectDetailsList = ({projects}) => {
         filtered_project.map((item) =>
             <div className="project-details padding-site">
                 <h1 className="project-details__name">{item.name}</h1>
-                <span>Описание проекта.</span>
+                <span>Project Description:</span>
                 <p className="project-details__description">{item.description}</p>
-                <span>Репозиторий:</span>
+                <span>Repository:</span>
                 <p className="project-details__repository">{item.repository}</p>
-                <span>Список пользователей:</span>
+                <span>List of users:</span>
                 <ol className="project-details__list-user">
                     {item.users.map((user) => <li>{user}</li>)}
                 </ol>

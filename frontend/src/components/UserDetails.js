@@ -8,15 +8,15 @@ const UserDetailsList = ({users}) => {
     return (
         filtered_users.map((item) =>
             <div className="project-details padding-site">
-                <h1 className="project-details__name">{item.name}</h1>
-                <span>Описание проекта.</span>
-                <p className="project-details__description">{item.description}</p>
-                <span>Репозиторий:</span>
-                <p className="project-details__repository">{item.repository}</p>
-                <span>Список пользователей:</span>
-                <ol className="project-details__list-user">
-                    {item.users.map((user) => <li>{user}</li>)}
-                </ol>
+                <h1 className="project-details__name">{item.username}</h1>
+                <span>First name:</span>
+                <h1 className="project-details">{item.firstName}</h1>
+                <span>Last name:</span>
+                <h1 className="project-details">{item.lastName}</h1>
+                <span>E-mail:</span>
+                <p className="project-details">{item.email}</p>
+                {item.isStaff ? <span>Site staff</span> : <span></span>}
+
             </div>
         )
     )

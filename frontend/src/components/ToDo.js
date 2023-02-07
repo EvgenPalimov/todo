@@ -32,7 +32,7 @@ const ToDoItem = ({toDoElement, deleteToDo}) => {
 const ToDoList = ({todo, deleteToDo}) => {
     return (
         <div>
-            <div className='padding-site'>
+            <div className='projects__bar padding-site'>
                 <Link className='button-link ' to='/todo/create'>Create</Link>
             </div>
             <table className='bordered'>

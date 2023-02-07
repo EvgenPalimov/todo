@@ -12,13 +12,26 @@ class UserViewSet(ViewSet, GenericAPIView):
     queryset = User.objects.filter(is_active=1)
 
     def get_serializer_class(self):
-        if self.request.query_params.get('version') == 'v2':
+        if self.request.data.get('version') == 'save':
             return UserModelSerializer
         return UserBaseModelSerializer
 
     def list(self, request, *args, **kwargs):
-        serializer = self.get_serializer(self.queryset, many=True)
+        serializer = self.get_serializer(User.objects.filter(is_active=1),
+                                         many=True)
         return Response(serializer.data)
+
+    def create(self, request, *args, **kwargs):
+        request.data['version'] = 'save'
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def perform_create(self, serializer):
+        serializer.save()
+
+
 
     def retrieve(self, request, pk=None):
         queryset = get_object_or_404(self.queryset, pk=pk)

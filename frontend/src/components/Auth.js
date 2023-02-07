@@ -1,5 +1,4 @@
 import React from "react";
-import {Redirect} from "react-router-dom";
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -21,18 +20,26 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <form className='page-auth__form' onSubmit={(event) => this.handleSubmit(event)}>
-                <fieldset className='page-auth__form-field'>
-                    <legend className="page-auth__form-title">Form authentification</legend>
-                    <input className="page-auth__form-input" type="text" name="login" placeholder="Login"
-                           value={this.state.login}
-                           onChange={(event) => this.handleChange(event)}/>
-                    <input className="page-auth__form-input" type="password" name="password" placeholder="Password"
-                           value={this.state.password}
-                           onChange={(event) => this.handleChange(event)}/>
-                    <button className="page-auth__form-submit" type="submit"> Login</button>
-                </fieldset>
-            </form>
+            <div>
+                {this.props.auth.isLogin ?
+                    <div className="heading-top">
+                        <h1 className="">Congratulations! You have successfully logged in.</h1>
+                    </div>
+                    :
+                    <form className='page-auth__form' onSubmit={(event) => this.handleSubmit(event)}>
+                        <fieldset className='page-auth__form-field'>
+                            <legend className="page-auth__form-title">Form authentification</legend>
+                            <input className="page-auth__form-input" type="text" name="login" placeholder="Login"
+                                   value={this.state.login}
+                                   onChange={(event) => this.handleChange(event)}/>
+                            <input className="page-auth__form-input" type="password" name="password" placeholder="Password"
+                                   value={this.state.password}
+                                   onChange={(event) => this.handleChange(event)}/>
+                            <button className="page-auth__form-submit" type="submit"> Login</button>
+                        </fieldset>
+                    </form>
+                    }
+            </div>
         );
     }
 }

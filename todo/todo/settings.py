@@ -24,11 +24,12 @@ SECRET_KEY = \
     'django-insecure-r+c_l)hsbz3*)pv3!3uz+f&jfn!p%(kv^x$@v11(yyboe9*a#2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
     'http://localhost:8000',
     'http://127.0.0.1:8000',
     'http://0.0.0.0:8000',
@@ -146,8 +147,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, '../frontend/build/static/',)
-STATICFILES_DIRS = (BASE_DIR / 'static',)
+STATIC_ROOT = os.path.join(BASE_DIR, '../frontend/build/static/',)
+# STATICFILES_DIRS = (BASE_DIR / 'static',)
 
 AUTH_USER_MODEL = 'usersapp.User'
 
@@ -199,5 +200,5 @@ REST_FRAMEWORK = {
 # }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=20),
+    'ACCESS_TOKEN_LIFETIME': timedelta(hours=8),
 }

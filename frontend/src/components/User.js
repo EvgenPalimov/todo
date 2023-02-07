@@ -1,11 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const UserItem = ({user, deleteUser}) => {
+const UserItem = ({user, deleteUser, staff}) => {
     return (
         <tr>
             <td>
-                {user.username}
+                <Link to={`/user/${user.id}`}>{user.username}</Link>
             </td>
             <td>
                 {user.firstName}
@@ -16,37 +16,61 @@ const UserItem = ({user, deleteUser}) => {
             <td>
                 {user.email}
             </td>
-            <td>
-                <button className='app-button' type='button' onClick={() => deleteUser(user.id)}>Delete</button>
-            </td>
+            {staff &&
+                <td>
+                    <Link className='button-link' to={`/user/update/${user.id}/`}>Update</Link>
+                </td>
+            }
+            {staff &&
+                <td>
+                    <button className='app-button' type='button'
+                            onClick={() => deleteUser(user.id)}>Delete
+                    </button>
+                </td>
+            }
         </tr>
     )
 }
 
-const UserList = ({users, deleteUser}) => {
+const UserList = ({users, deleteUser, staff}) => {
     return (
-        <table className='bordered'>
-            <caption>Table with users</caption>
-            <tr>
-                <th>
-                    User name
-                </th>
-                <th>
-                    First name
-                </th>
-                <th>
-                    Last name
-                </th>
-                <th>
-                    E-mail
-                </th>
-                <th>
-                    Delete
-                </th>
-            </tr>
-            {users.map((user) => <UserItem user={user}
-                                           deleteUser={deleteUser}/>)}
-        </table>
+        <div>
+            {staff &&
+                <div className='projects__bar padding-site'>
+                    <Link className='button-link ' to='/users/create'>Create</Link>
+                </div>
+            }
+            <table className='bordered'>
+                <caption>Table with users</caption>
+                <tr>
+                    <th>
+                        User name
+                    </th>
+                    <th>
+                        First name
+                    </th>
+                    <th>
+                        Last name
+                    </th>
+                    <th>
+                        E-mail
+                    </th>
+                    {staff &&
+                        <th>
+                            Update
+                        </th>
+                    }
+                    {staff &&
+                        <th>
+                            Delete
+                        </th>
+                    }
+                </tr>
+                {users.map((user) => <UserItem user={user}
+                                               deleteUser={deleteUser}
+                                               staff={staff}/>)}
+            </table>
+        </div>
     )
 }
 

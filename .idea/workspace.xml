@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="run to server v.2.1">
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="run to server v.3">
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/css/main.99e1ce1b.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.f84ce4d4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.f84ce4d4.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserFormCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserFormUpdate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/main.58153e89.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/css/main.99e1ce1b.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/main.58153e89.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e6dcc936.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e6dcc936.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.f84ce4d4.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e6dcc936.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectFormCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectFormCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectFormUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectFormUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDoFormCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDoFormCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDoFormUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDoFormUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/UserDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UserDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/css/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/App.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/css/Style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/css/Style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/usersapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/usersapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo/usersapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/usersapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +45,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -30,17 +71,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/palim/PycharmProjects/todo/todo",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/palim/PycharmProjects/todo/frontend/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2022.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\palim\PycharmProjects\todo\frontend\src\components" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="todo" type="Python.DjangoServer" factoryName="Django server">
       <module name="Django Rest" />
@@ -114,6 +166,20 @@
       <workItem from="1675183104136" duration="3881000" />
       <workItem from="1675191421180" duration="380000" />
       <workItem from="1675248666653" duration="1630000" />
+      <workItem from="1675252676633" duration="1906000" />
+      <workItem from="1675255888189" duration="444000" />
+      <workItem from="1675256656378" duration="24473000" />
+      <workItem from="1675357892779" duration="11707000" />
+      <workItem from="1675529300683" duration="106000" />
+      <workItem from="1675529460393" duration="121000" />
+      <workItem from="1675529589749" duration="68000" />
+      <workItem from="1675529680514" duration="30000" />
+      <workItem from="1675529717591" duration="229000" />
+      <workItem from="1675529959261" duration="194000" />
+      <workItem from="1675530161616" duration="373000" />
+      <workItem from="1675531700211" duration="13133000" />
+      <workItem from="1675693256185" duration="18057000" />
+      <workItem from="1675773120016" duration="11025000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -346,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675252031180</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="run to server v.3">
+      <created>1675252815886</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1675252815886</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.10" />
     <MESSAGE value="work to docker v2.11" />
     <MESSAGE value="work to docker v2.12" />
     <MESSAGE value="work to docker v2.13" />
@@ -392,7 +464,34 @@
     <MESSAGE value="run to server v.1" />
     <MESSAGE value="run to server v.2" />
     <MESSAGE value="run to server v.2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="run to server v.2.1" />
+    <MESSAGE value="run to server v.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="run to server v.3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
+          <line>289</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
+          <line>254</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/todo/usersapp/serializers.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/todo/usersapp/views.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_Rest$settings.coverage" NAME="settings Coverage Results" MODIFIED="1670759247007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/todo/todo" />
