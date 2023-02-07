@@ -54,7 +54,7 @@ class App extends React.Component {
         const data = {name: name, description: description, repository: repository, users: user};
         axios.post(get_url(`projects/`), data, {headers}).then(
             response => {
-                window.location.replace(`${FRONT}projects/`);
+                window.location.href = '/projects/';
             }
         ).catch(error => {
             console.log(error)
@@ -66,7 +66,7 @@ class App extends React.Component {
         const data = {id: id, name: name, description: description, repository: repository, users: user};
         axios.put(get_url(`projects/${id}/`), data, {headers}).then(
             response => {
-                window.location.replace(`${FRONT}projects/`);
+                window.location.href = '/projects/';
             }
         ).catch(error => {
             console.log(error)
@@ -88,7 +88,7 @@ class App extends React.Component {
         const data = {project: project, text: text, user: user};
         axios.post(get_url(`todo/`), data, {headers}).then(
             response => {
-                window.location.replace(`${FRONT}todo/`);
+                window.location.href = '/todo/';
             }
         ).catch(error => {
             console.log(error);
@@ -100,7 +100,7 @@ class App extends React.Component {
         const data = {project: project, text: text, user: user};
         axios.put(get_url(`todo/${id}/`), data, {headers}).then(
             response => {
-                window.location.replace(`${FRONT}todo/`);
+                window.location.href = '/todo/';
             }
         ).catch(error => {
             console.log(error);
@@ -124,7 +124,7 @@ class App extends React.Component {
             is_staff: isStaff};
         axios.post(get_url(`users/`), data, {headers}).then(
             response => {
-                window.location.replace(`${FRONT}users/`);
+                window.location.href = '/users/';
             }
         ).catch(error => {
             console.log(error);
@@ -137,7 +137,7 @@ class App extends React.Component {
             last_name: lastName, email: email, is_staff: isStaff};
         axios.put(get_url(`users/${id}/`), data,{headers}).then(
             response => {
-                window.location.replace(`${FRONT}users/`);
+                window.location.href = '/users/';
             }
         ).catch(error => {
             console.log(error);
@@ -263,7 +263,7 @@ class App extends React.Component {
                                                                        createProject={(name, description, repository, user) =>
                                                                            this.createProject(name, description, repository, user)}/>}/>
                             <Route exact path='/projects'
-                                   component={() => <ProjectList projects={this.state.projects}
+                                   component={() => <ProjectList projects={this.state.projects} auth={this.state.auth}
                                                                  deleteProject={(id) => this.deleteProject(id)}/>}/>
                             <Route exact path='/projects/update/:id/'
                                    component={() => <ProjectFormUpdate projects={this.state.projects}
@@ -282,7 +282,7 @@ class App extends React.Component {
                                                                                                 projects={this.state.projects}
                                                                                                 createToDo={(project, text, user) =>
                                                                                                     this.createToDo(project, text, user)}/>}/>
-                            <Route exact path='/todo' component={() => <ToDoList todo={this.state.todo}
+                            <Route exact path='/todo' component={() => <ToDoList todo={this.state.todo} auth={this.state.auth}
                                                                                  deleteToDo={(id) => this.deleteToDo(id)}/>}/>
                             <Route exact path='/login' component={() => <LoginForm
                                 login={(username, password) => this.login(username, password)} auth={this.state.auth}/>}/>

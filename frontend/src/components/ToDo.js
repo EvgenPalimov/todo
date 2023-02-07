@@ -29,12 +29,14 @@ const ToDoItem = ({toDoElement, deleteToDo}) => {
     )
 }
 
-const ToDoList = ({todo, deleteToDo}) => {
+const ToDoList = ({todo, deleteToDo, auth}) => {
     return (
         <div>
-            <div className='projects__bar padding-site'>
-                <Link className='button-link ' to='/todo/create'>Create</Link>
-            </div>
+            {auth.isLogin &&
+                <div className='projects__bar padding-site'>
+                    <Link className='button-link ' to='/todo/create'>Create</Link>
+                </div>
+            }
             <table className='bordered'>
                 <caption>Table with ToDo</caption>
                 <tr>

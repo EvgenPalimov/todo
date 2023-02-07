@@ -29,7 +29,7 @@ const ProjectItem = ({project, deleteProject}) => {
     )
 }
 
-const ProjectList = ({projects, deleteProject}) => {
+const ProjectList = ({projects, deleteProject, auth}) => {
     const [value, setValue] = useState('')
 
     const filteredProjects = projects.filter(project => {
@@ -38,16 +38,18 @@ const ProjectList = ({projects, deleteProject}) => {
 
     return (
         <div>
-            <div className='projects__bar padding-site'>
-                <Link className='button-link ' to='/project/create'>Create</Link>
-                <form action="#" className='search__form'>
-                    <input
-                        type="text"
-                        placeholder="Search in the projects..."
-                        className="search__input"
-                        onChange={(event) => setValue(event.target.value)}/>
-                </form>
-            </div>
+            {auth.isLogin &&
+                <div className='projects__bar padding-site'>
+                    <Link className='button-link ' to='/project/create'>Create</Link>
+                    <form action="#" className='search__form'>
+                        <input
+                            type="text"
+                            placeholder="Search in the projects..."
+                            className="search__input"
+                            onChange={(event) => setValue(event.target.value)}/>
+                    </form>
+                </div>
+            }
             <table className='bordered'>
                 <caption>Table with Projects</caption>
                 <tr>
