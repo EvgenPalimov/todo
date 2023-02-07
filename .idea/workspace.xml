@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.6" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.8">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +148,7 @@
       <workItem from="1675530161616" duration="373000" />
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
-      <workItem from="1675773120016" duration="12807000" />
+      <workItem from="1675773120016" duration="13589000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -442,7 +444,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675797000043</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="frontend build v.7">
+      <created>1675797237696</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1675797237696</updated>
+    </task>
+    <task id="LOCAL-00044" summary="frontend build v.8">
+      <created>1675797463219</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1675797463219</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,8 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.19" />
-    <MESSAGE value="work to docker v2.21" />
     <MESSAGE value="work to docker v2.22" />
     <MESSAGE value="work to docker v2.23" />
     <MESSAGE value="work to docker v2.24" />
@@ -488,7 +502,9 @@
     <MESSAGE value="frontend build v.4" />
     <MESSAGE value="frontend build v.5" />
     <MESSAGE value="frontend build v.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.6" />
+    <MESSAGE value="frontend build v.7" />
+    <MESSAGE value="frontend build v.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
