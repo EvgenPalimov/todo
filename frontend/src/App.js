@@ -177,7 +177,7 @@ class App extends React.Component {
         cookies.set('refresh', '');
         this.setState({'auth': {username: '', isLogin: false}});
         this.setState({'staff': false});
-        window.location.replace(`${FRONT}login/`);
+        window.location.href = '/login/';
     }
 
     get_headers() {
