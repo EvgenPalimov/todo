@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.13">
-      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.bb31b839.js.map" afterDir="false" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.14">
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.d12d0736.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.d12d0736.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.3eb8a02e.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.bb31b839.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.3eb8a02e.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.bb31b839.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.3eb8a02e.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.bb31b839.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.bb31b839.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.d12d0736.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.bb31b839.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +157,7 @@
       <workItem from="1675530161616" duration="373000" />
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
-      <workItem from="1675773120016" duration="16222000" />
-    </task>
-    <task id="LOCAL-00001" summary="work to docker v2.5">
-      <created>1649259973448</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1649259973449</updated>
+      <workItem from="1675773120016" duration="19158000" />
     </task>
     <task id="LOCAL-00002" summary="work to docker v2.6">
       <created>1649262598873</created>
@@ -502,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675799804697</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="frontend build v.14">
+      <created>1675800665785</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1675800665785</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.27" />
     <MESSAGE value="Work to project to the end v1." />
     <MESSAGE value="Work to project to the end v1.1" />
     <MESSAGE value="the end" />
@@ -548,19 +547,20 @@
     <MESSAGE value="frontend build v.11" />
     <MESSAGE value="frontend build v.12" />
     <MESSAGE value="frontend build v.13" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.13" />
+    <MESSAGE value="frontend build v.14" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
-          <line>289</line>
+          <line>288</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
-          <line>254</line>
+          <line>253</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

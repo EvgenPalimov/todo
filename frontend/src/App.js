@@ -17,7 +17,7 @@ import LoginForm from "./components/Auth"
 import Footer from "./components/Footer";
 import NotFound404 from "./components/NotFound404";
 import ProjectDetailsList from "./components/ProjectDetails";
-import Cookies from "universal-cookie";
+import Cookies from 'js-cookie'
 import ToDoFormCreate from "./components/ToDoFormCreate";
 import ProjectFormUpdate from "./components/ProjectFormUpdate";
 import ToDoFormUpdate from "./components/ToDoFormUpdate";
@@ -27,7 +27,6 @@ import UserDetailsList from "./components/UserDetails";
 
 
 const DOMAIN = 'http://46.19.64.201:8000/api/'
-const FRONT = 'http://46.19.64.201:8000/'
 const get_url = (url) => `${DOMAIN}${url}`
 const cookies = new Cookies()
 
@@ -157,9 +156,9 @@ class App extends React.Component {
     login(username, password) {
         axios.post(get_url('token/'), {username: username, password: password})
             .then(response => {
-                cookies.set('login', username);
-                cookies.set('access', response.data.access);
-                cookies.set('refresh', response.data.refresh);
+                cookies.set('login', username, { expires: 7, path: '' });
+                cookies.set('access', response.data.access, { expires: 7, path: '' });
+                cookies.set('refresh', response.data.refresh, { expires: 7, path: '' });
                 this.setState({'auth': {username: username, isLogin: true}});
                 this.loadData();
             }).catch(error => {
@@ -172,9 +171,9 @@ class App extends React.Component {
     }
 
     logout() {
-        cookies.set('login', '');
-        cookies.set('access', '');
-        cookies.set('refresh', '');
+        cookies.set('login', '', {path: '' });
+        cookies.set('access', '', {path: '' });
+        cookies.set('refresh', '', {path: '' });
         this.setState({'auth': {username: '', isLogin: false}});
         this.setState({'staff': false});
         window.location.href = '/login/';
