@@ -17,7 +17,7 @@ import LoginForm from "./components/Auth"
 import Footer from "./components/Footer";
 import NotFound404 from "./components/NotFound404";
 import ProjectDetailsList from "./components/ProjectDetails";
-import Cookies from 'js-cookie'
+import cookie from 'react-cookie';
 import ToDoFormCreate from "./components/ToDoFormCreate";
 import ProjectFormUpdate from "./components/ProjectFormUpdate";
 import ToDoFormUpdate from "./components/ToDoFormUpdate";
@@ -155,9 +155,9 @@ class App extends React.Component {
     login(username, password) {
         axios.post(get_url('token/'), {username: username, password: password})
             .then(response => {
-                Cookies.set('login', username, { expires: 7, path: '' });
-                Cookies.set('access', response.data.access, { expires: 7, path: '' });
-                Cookies.set('refresh', response.data.refresh, { expires: 7, path: '' });
+                cookie.save('login', username, { expires: 7, path: '' });
+                cookie.save('access', response.data.access, { expires: 7, path: '' });
+                cookie.save('refresh', response.data.refresh, { expires: 7, path: '' });
                 this.setState({'auth': {username: username, isLogin: true}});
                 this.loadData();
             }).catch(error => {
@@ -170,9 +170,9 @@ class App extends React.Component {
     }
 
     logout() {
-        Cookies.set('login', '', {path: '' });
-        Cookies.set('access', '', {path: '' });
-        Cookies.set('refresh', '', {path: '' });
+        cookie.save('login', '', {path: '' });
+        cookie.save('access', '', {path: '' });
+        cookie.save('refresh', '', {path: '' });
         this.setState({'auth': {username: '', isLogin: false}});
         this.setState({'staff': false});
         window.location.href = '/login/';
@@ -183,7 +183,7 @@ class App extends React.Component {
             'Content-Type': 'application/json'
         };
         if (this.state.auth.isLogin === true) {
-            const token = Cookies.get('access');
+            const token = cookie.load('access');
             headers['Authorization'] = 'Bearer ' + token
         }
         return headers
@@ -233,7 +233,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        const username = Cookies.get('login');
+        const username = cookie.load('login');
         if ((username !== '') && (username != null)) {
             this.setState({'auth': {username: username, isLogin: true}}, () => this.loadData());
         }
