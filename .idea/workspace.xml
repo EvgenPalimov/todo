@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="run to server v.3">
-      <change afterPath="$PROJECT_DIR$/frontend/build/static/css/main.99e1ce1b.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.f84ce4d4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.f84ce4d4.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserFormCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserFormUpdate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Validators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/main.58153e89.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/css/main.99e1ce1b.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/css/main.58153e89.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e6dcc936.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e6dcc936.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/static/js/main.f84ce4d4.js.LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.e6dcc936.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectFormCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectFormCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectFormUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectFormUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDoFormCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDoFormCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDoFormUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDoFormUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/UserDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UserDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/App.sass" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/App.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/Style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/Style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/usersapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/usersapp/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/usersapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/usersapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="add createUser, updateUser, validators" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +146,7 @@
       <workItem from="1675530161616" duration="373000" />
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
-      <workItem from="1675773120016" duration="11025000" />
+      <workItem from="1675773120016" duration="11379000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -419,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675252815886</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add createUser, updateUser, validators">
+      <created>1675795756531</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675795756531</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.11" />
     <MESSAGE value="work to docker v2.12" />
     <MESSAGE value="work to docker v2.13" />
     <MESSAGE value="work to docker v2.14" />
@@ -465,7 +438,8 @@
     <MESSAGE value="run to server v.2" />
     <MESSAGE value="run to server v.2.1" />
     <MESSAGE value="run to server v.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="run to server v.3" />
+    <MESSAGE value="add createUser, updateUser, validators" />
+    <option name="LAST_COMMIT_MESSAGE" value="add createUser, updateUser, validators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
