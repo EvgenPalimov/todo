@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.5" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +146,7 @@
       <workItem from="1675530161616" duration="373000" />
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
-      <workItem from="1675773120016" duration="12493000" />
+      <workItem from="1675773120016" duration="12807000" />
     </task>
     <task id="LOCAL-00001" summary="work to docker v2.5">
       <created>1649259973448</created>
@@ -435,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675796820137</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="frontend build v.6">
+      <created>1675797000043</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1675797000043</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="work to docker v2.18" />
     <MESSAGE value="work to docker v2.19" />
     <MESSAGE value="work to docker v2.21" />
     <MESSAGE value="work to docker v2.22" />
@@ -481,7 +487,8 @@
     <MESSAGE value="frontend build v.3" />
     <MESSAGE value="frontend build v.4" />
     <MESSAGE value="frontend build v.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.5" />
+    <MESSAGE value="frontend build v.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
