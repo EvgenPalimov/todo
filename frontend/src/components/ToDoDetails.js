@@ -10,9 +10,9 @@ const ToDoDetailsList = ({listTodo}) => {
             <div className="project-details padding-site">
                 <h1 className="project-details__name">{item.project}</h1>
                 <span>Description:</span>
-                <p className="project-details__description">{item.description}</p>
+                <p className="project-details__description">{item.text}</p>
                 <span>User:</span>
-                <h1 className="project-details__name">{item.user}</h1>
+                <h1 className="project-details">{item.user}</h1>
             </div>
         )
     )
