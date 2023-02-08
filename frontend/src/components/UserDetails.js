@@ -2,11 +2,11 @@ import React from "react";
 import {useParams} from "react-router-dom";
 
 const UserDetailsList = ({users}) => {
-    let {id} = useParams()
-    let filtered_users = users.filter(item => item.id === parseInt(id))
+    let {id} = useParams();
+    let filteredUsers = users.filter(item => item.id === parseInt(id));
 
     return (
-        filtered_users.map((item) =>
+        filteredUsers.map((item) =>
             <div className="project-details padding-site">
                 <h1 className="project-details__name">{item.username}</h1>
                 <span>First name:</span>
@@ -22,4 +22,4 @@ const UserDetailsList = ({users}) => {
     )
 }
 
-export default UserDetailsList
+export default UserDetailsList;

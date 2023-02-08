@@ -53,7 +53,7 @@ class ToDoFormCreate extends React.Component {
                         </div>
                         <div className="create-form-div">
                             <label className="create-form-label" htmlFor="description">Text:</label>
-                            <input className="create-form-input" type="text" id="text" name="text"
+                            <textarea className="create-form-input" type="text" id="text" name="text"
                                    placeholder="Description"
                                    value={this.state.text} onChange={(event) => this.handleChange(event)}/>
                             {formErrors.text.length > 0 && (

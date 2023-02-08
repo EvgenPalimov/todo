@@ -1,18 +1,16 @@
 import React from "react";
 import {useParams} from "react-router-dom";
 
-const ProjectDetailsList = ({projects}) => {
+const ToDoDetailsList = ({listTodo}) => {
     let {id} = useParams();
-    let filteredProject = projects.filter(item => item.id === parseInt(id));
+    let filteredTodo = listTodo.filter(item => item.id === parseInt(id));
 
     return (
-        filteredProject.map((item) =>
+        filteredTodo.map((item) =>
             <div className="project-details padding-site">
-                <h1 className="project-details__name">{item.name}</h1>
-                <span>Project Description:</span>
+                <h1 className="project-details__name">{item.project}</h1>
+                <span>Description:</span>
                 <p className="project-details__description">{item.description}</p>
-                <span>Repository:</span>
-                <p className="project-details__repository">{item.repository}</p>
                 <span>List of users:</span>
                 <ol className="project-details__list-user">
                     {item.users.map((user) => <li>{user}</li>)}
@@ -22,4 +20,4 @@ const ProjectDetailsList = ({projects}) => {
     )
 }
 
-export default ProjectDetailsList;
+export default ToDoDetailsList;

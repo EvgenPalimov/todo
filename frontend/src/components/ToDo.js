@@ -20,6 +20,9 @@ const ToDoItem = ({toDoElement, deleteToDo}) => {
                 {toDoElement.updated}
             </td>
             <td>
+                <Link className='button-link' to={`/todo/${toDoElement.id}/`}>Read</Link>
+            </td>
+            <td>
                 <Link className='button-link' to={`/todo/update/${toDoElement.id}/`}>Update</Link>
             </td>
             <td>
@@ -54,6 +57,9 @@ const ToDoList = ({todo, deleteToDo, auth}) => {
                     </th>
                     <th>
                         Updated
+                    </th>
+                    <th>
+                        Read
                     </th>
                     <th>
                         Change
