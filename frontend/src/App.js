@@ -276,7 +276,7 @@ class App extends React.Component {
                                                                     todo={this.state.todo}
                                                                     updateToDo={(id, project, text, user) =>
                                                                         this.updateToDo(id, project, text, user)}/>}/>
-                            <Route exact path='/todo/:id/'> <ToDoDetailsList listTodo={this.state.todo}/> </Route>
+                            <Route exact path='/todo/:id/'> <ToDoDetailsList listTodo={this.state.todo} /> </Route>
                             <Route exact path='/todo/create' component={() => <ToDoFormCreate username={this.state.auth.username}
                                                                                                 users={this.state.users}
                                                                                                 projects={this.state.projects}

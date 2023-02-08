@@ -11,10 +11,8 @@ const ToDoDetailsList = ({listTodo}) => {
                 <h1 className="project-details__name">{item.project}</h1>
                 <span>Description:</span>
                 <p className="project-details__description">{item.description}</p>
-                <span>List of users:</span>
-                <ol className="project-details__list-user">
-                    {item.users.map((user) => <li>{user}</li>)}
-                </ol>
+                <span>User:</span>
+                <h1 className="project-details__name">{item.user}</h1>
             </div>
         )
     )
