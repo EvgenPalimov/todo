@@ -75,4 +75,4 @@ const ToDoList = ({todo, deleteToDo, auth}) => {
     )
 }
 
-export default ToDoList
+export default ToDoList;

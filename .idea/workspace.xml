@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.21">
-      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.797865b8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.797865b8.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/build/static/js/main.797865b8.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.ca6c2127.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.ca6c2127.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/static/js/main.ca6c2127.js.map" beforeDir="false" />
+    <list default="true" id="3847e8e4-d602-49b3-8ce4-49a1406778d1" name="Default Changelist" comment="frontend build v.22">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDoDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDoDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectFormCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectFormCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ProjectFormUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ProjectFormUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ToDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/UserFormUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UserFormUpdate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,14 +157,7 @@
       <workItem from="1675531700211" duration="13133000" />
       <workItem from="1675693256185" duration="18057000" />
       <workItem from="1675773120016" duration="20833000" />
-      <workItem from="1675868285301" duration="1880000" />
-    </task>
-    <task id="LOCAL-00009" summary="work to docker v2.13">
-      <created>1649264379529</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1649264379529</updated>
+      <workItem from="1675868285301" duration="2692000" />
     </task>
     <task id="LOCAL-00010" summary="work to docker v2.14">
       <created>1649264604018</created>
@@ -503,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675870194310</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="frontend build v.22">
+      <created>1675870285028</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1675870285028</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="run to server v.2.1" />
     <MESSAGE value="run to server v.3" />
     <MESSAGE value="add createUser, updateUser, validators" />
     <MESSAGE value="frontend build" />
@@ -549,19 +547,20 @@
     <MESSAGE value="frontend build v.19" />
     <MESSAGE value="frontend build v.20" />
     <MESSAGE value="frontend build v.21" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.21" />
+    <MESSAGE value="frontend build v.22" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend build v.22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
-          <line>289</line>
+          <line>287</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/App.js</url>
-          <line>253</line>
+          <line>251</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

@@ -40,7 +40,7 @@ class UserFormUpdate extends React.Component {
     }
 
     handleSubmit(event) {
-        event.preventDefault()
+        event.preventDefault();
         if (validateForm(this.state)) {
             this.props.updateUser(this.state.id, this.state.username,
                 this.state.firstName, this.state.lastName, this.state.email,

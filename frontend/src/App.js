@@ -27,7 +27,6 @@ import ToDoDetailsList from "./components/ToDoDetails";
 
 
 const DOMAIN = 'http://46.19.64.201:8000/api/'
-const FRONT = 'http://46.19.64.201:8000/'
 const get_url = (url) => `${DOMAIN}${url}`
 
 class App extends React.Component {
@@ -56,7 +55,7 @@ class App extends React.Component {
                 window.location.href = '/projects/';
             }
         ).catch(error => {
-            console.log(error)
+            console.log(error);
         })
     }
 
@@ -68,7 +67,7 @@ class App extends React.Component {
                 window.location.href = '/projects/';
             }
         ).catch(error => {
-            console.log(error)
+            console.log(error);
         })
     }
 
@@ -77,8 +76,7 @@ class App extends React.Component {
         axios.delete(get_url(`projects/${id}`), {headers}).then(response => {
             this.loadDataProjects(headers);
         }).catch(error => {
-            console.log(error)
-            this.setState({projects: []})
+            console.log(error);
         })
     }
 
@@ -187,7 +185,7 @@ class App extends React.Component {
             const token = localStorage.getItem('access');
             headers['Authorization'] = 'Bearer ' + token
         }
-        return headers
+        return headers;
     }
 
     loadDataUsers(headers) {
@@ -196,9 +194,9 @@ class App extends React.Component {
                 'users': response.data
             })
             this.CheckUserIsStaff();
-        }).catch(error =>
-            console.log(error)
-        )
+        }).catch(error => {
+            console.log(error);
+        })
     }
 
     loadDataProjects(headers) {
@@ -206,9 +204,9 @@ class App extends React.Component {
             this.setState({
                 'projects': response.data
             })
-        }).catch(error =>
-            console.log(error)
-        )
+        }).catch(error => {
+            console.log(error);
+        })
     }
 
     loadDataToDo(headers) {
@@ -216,9 +214,9 @@ class App extends React.Component {
             this.setState({
                 'todo': response.data
             })
-        }).catch(error =>
-            console.log(error)
-        )
+        }).catch(error => {
+            console.log(error);
+        })
     }
     CheckUserIsStaff() {
         if (this.state.users !== []) {

@@ -41,7 +41,7 @@ class ProjectFormCreate extends React.Component {
     }
 
     handleSubmit(event) {
-        event.preventDefault()
+        event.preventDefault();
         if (validateForm(this.state)) {
             this.props.createProject(this.state.name, this.state.description,
                 this.state.repository, this.state.user);

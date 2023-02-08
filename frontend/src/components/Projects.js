@@ -30,10 +30,10 @@ const ProjectItem = ({project, deleteProject}) => {
 }
 
 const ProjectList = ({projects, deleteProject, auth}) => {
-    const [value, setValue] = useState('')
+    const [value, setValue] = useState('');
 
     const filteredProjects = projects.filter(project => {
-        return project.name.toLowerCase().includes(value.toLowerCase())
+        return project.name.toLowerCase().includes(value.toLowerCase());
     })
 
     return (
@@ -79,4 +79,4 @@ const ProjectList = ({projects, deleteProject, auth}) => {
     )
 }
 
-export default ProjectList
+export default ProjectList;
